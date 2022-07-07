@@ -1,0 +1,37 @@
+<template>
+  <div id="app">
+    <appHeader/>
+    <router-view/>
+  </div>
+</template>
+
+<script>
+import appHeader from '@/components/global/appHeader.vue'
+
+export default {
+  name: 'App',
+  components:{
+    appHeader,
+  }
+}
+</script>
+<style lang="scss">
+#app {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  color: #2c3e50;
+}
+
+nav {
+  padding: 30px;
+
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
+}
+</style>

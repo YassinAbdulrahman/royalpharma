@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1088" height="833" viewBox="0 0 1088 833">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1935" data-name="Rectangle 1935" width="1088" height="833" transform="translate(416 7191)" fill="#fff"/>
+    </clipPath>
+    <filter id="Path_4428" x="56.629" y="-30.047" width="1040.37" height="1043.783" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.04" y1="0.832" x2="0.725" y2="0.138" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e2f3ff"/>
+      <stop offset="1" stop-color="#f4f7fc"/>
+    </linearGradient>
+    <filter id="Path_4426" x="135.153" y="-30.047" width="940.481" height="880.743" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Mask_Group_10" data-name="Mask Group 10" transform="translate(-416 -7191)" clip-path="url(#clip-path)">
+    <g id="Group_1427" data-name="Group 1427" transform="translate(-88.015 -586)">
+      <g transform="matrix(1, 0, 0, 1, 504.01, 7777)" filter="url(#Path_4428)">
+        <path id="Path_4428-2" data-name="Path 4428" d="M399.488,0c182.257,0,414.369,433.749,323.24,586.563S108.368,753.734,17.239,600.919,217.231,0,399.488,0Z" transform="translate(553.21 1001.74) rotate(-131)" fill="#013299"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 504.01, 7777)" filter="url(#Path_4426)">
+        <path id="Path_4426-2" data-name="Path 4426" d="M388.677,0C573.822,0,851.539,439.161,758.966,585.548s-648.006,146.387-740.579,0S203.532,0,388.677,0Z" transform="translate(312.37 -24.05) rotate(14)" fill="url(#linear-gradient)"/>
+      </g>
+      <text id="Social_Responssibility" data-name="Social Responssibility" transform="translate(840.272 8098)" fill="#013299" font-size="48" font-family="Ubuntu-Medium, Ubuntu" font-weight="500"><tspan x="0" y="0">Social Responssibility</tspan></text>
+      <text id="At_Royal_Pharma_We_feel_responsibility_towards_the_society_and_the_areas_in_which_we_operate._We_adhere_to_the_laws_of_the_countries_where_we_do_business._We_also_believe_that_It_is_normal_to_help_and_therefore_we_invest_significant_financial_resour" data-name="At Royal Pharma We feel responsibility towards 
+the society and the areas in which we operate.
+We adhere to the laws of the countries where
+ we do business. We also believe that &quot;It is normal 
+to help&quot;, and therefore we invest significant financial 
+resour" transform="translate(1083.272 8153.844)" fill="#1a1e26" font-size="24" font-family="Ubuntu-Medium, Ubuntu" font-weight="500"><tspan x="-267.024" y="0">At Royal Pharma We feel responsibility towards </tspan><tspan x="-256.596" y="38.4">the society and the areas in which we operate.</tspan><tspan x="-252.864" y="76.8">We adhere to the laws of the countries where</tspan><tspan x="-279.144" y="115.2" xml:space="preserve"> we do business. We also believe that &quot;It is normal </tspan><tspan x="-297.876" y="153.6">to help&quot;, and therefore we invest significant financial </tspan><tspan x="-249.456" y="192">resources in the nonprofit sector every year. </tspan><tspan x="-272.46" y="230.4">This especially involves the areas of relief, health</tspan><tspan x="-111.516" y="268.8" xml:space="preserve"> care and education.</tspan></text>
+    </g>
+  </g>
+</svg>
