@@ -1,5 +1,5 @@
 <template>
-  <Doughnut
+  <Pie
     :chart-options="chartOptions"
     :chart-data="chartData"
     :chart-id="chartId"
@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import { Doughnut } from 'vue-chartjs/legacy'
+import { Pie } from 'vue-chartjs/legacy'
 
 import {
   Chart as ChartJS,
@@ -27,14 +27,14 @@ import {
 ChartJS.register(Title, Tooltip, Legend, ArcElement, CategoryScale)
 
 export default {
-  name: 'DoughnutChart',
+  name: 'PieChart',
   components: {
-    Doughnut
+    Pie
   },
   props: {
     chartId: {
       type: String,
-      default: 'doughnut-chart'
+      default: 'pie-chart'
     },
     datasetIdKey: {
       type: String,
@@ -42,7 +42,7 @@ export default {
     },
     width: {
       type: Number,
-      default: 300
+      default: 400
     },
     height: {
       type: Number,
@@ -64,11 +64,10 @@ export default {
   data() {
     return {
       chartData: {
-        labels: ['VueJs', 'EmberJs', 'ReactJs', 'AngularJs'],
         datasets: [
           {
-            backgroundColor: ['#41B883', '#E46651', '#00D8FF', '#DD1B16'],
-            data: [40, 20, 80, 10]
+            backgroundColor: ['#013299', '#FE0000'],
+            data: [60, 40]
           }
         ]
       },
