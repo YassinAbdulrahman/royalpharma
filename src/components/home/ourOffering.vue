@@ -28,62 +28,72 @@ export default {
 <style lang="scss" scoped>
 .big-box {
   position: relative;
-
+  transition: 0.5s ease-in-out;
   .srv-box {
     height: 259px;
     background-color: #ffffff;
     border-radius: 20px;
-    box-shadow: 0 3px 6px rgb(0, 0, 0, 16%);
+    box-shadow: 0 3px 6px rgb(0, 0, 0, 15%);
     display: grid;
     place-content: center;
-    z-index: 1;
+
     svg {
       margin: auto;
     }
     p {
       font-size: 24px;
       line-height: 35px;
-      font-weight: bold;
+      font-family: Ubuntu-B;
       width: 240px;
       height: 62px;
+      margin-top: 17.5px;
     }
     .ouroffering {
-      width: 405px;
+      width: 413px;
       background-color: #e2f3ff;
       border-radius: 0 0 20px 20px;
       position: absolute;
-      top: 96%;
+      top: 93%;
       left: 50%;
-      transform: translateX(-50%);
-      z-index: 2;
-      visibility: hidden;
-      transition: visibility 0.25s ease-in-out;
-      transform-origin: bottom;
+      transform: translate(-50%, 0);
+      z-index: -1;
+      display: none;
       @media (max-width: 768px) {
         width: 350px;
-      } 
+      }
       @media (min-width: 768px) and (max-width: 991px) {
         width: 400px;
       }
       @media (min-width: 991px) and (max-width: 1366px) {
-        width: 350px;
+        width: 358px;
       }
 
       ul {
+        z-index: 8;
         padding: 38.9px 0px 24px 32px;
         li {
           text-align: left;
           font-size: 20px;
-          color: #013299;
-          &:not(:last-child) {
-            padding-bottom: 12px;
-          }
+          margin: 0;
+          padding: 0;
+          color: var(--color_text_buttontwo);
         }
       }
     }
   }
 }
 .big-box:hover .ouroffering {
-  visibility: visible;
+  transform-origin: bottom;
+  animation-name: example;
+  animation-duration: 4s;
+  display: inline-block;
+}
+@keyframes example {
+  from {
+    transform: translate(-50%, -94%);
+  }
+  to {
+    transform: translate(-50%, 0);
+  }
 }
 </style>

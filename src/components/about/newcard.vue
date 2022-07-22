@@ -37,7 +37,7 @@ export default {
     width: 519px;
     height: 166px;
     border-radius: 107px;
-    background-image: linear-gradient(to right, #013299, #395faf);
+    background-image: linear-gradient(to left, #013299, #395faf);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -61,7 +61,7 @@ export default {
       font-size: 1.25rem;
       line-height: 24px;
       color: var(--small-four-box-about);
-      font-weight: 500;
+      font-family: Ubuntu-R;
       text-align: left;
       place-self: flex-end;
       @media screen and (max-width: 768px) {

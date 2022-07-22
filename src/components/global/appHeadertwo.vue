@@ -94,6 +94,7 @@ export default {
 
 <style lang="scss" scoped>
 .header {
+   font-family: Ubuntu-R;
   a {
     text-decoration: none;
   }
@@ -110,6 +111,7 @@ export default {
   .middelnav li .router-link-active {
     font-weight: bold;
     color: #013299;
+    font-family: Ubuntu-B;
     // ::before {
     //   content: "";
     //   background-image: url("../../assets/logo/navlinkslogo.svg");

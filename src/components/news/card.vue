@@ -1,119 +1,118 @@
 <template>
-    <div class="third-col col-md-4">
-      <div class="small-card card">
-        <img
-          class="img-fluid"
-          :src="card.src"
-          alt="Card image cap"
-        />
-        <div class="card-body text-start">
-          <h3><span class="badge bg-secondary">{{card.date}}</span></h3>
-          <h5 class="card-title">{{card.title}}</h5>
-          <p class="card-text">
-            {{card.parg}}
-          </p>
-          <span class="read_more">
-            <a href="/subnewsviews">{{card.goto}}</a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16.829"
-              height="11.947"
-              viewBox="0 0 16.829 11.947"
+  <div class="third-col col-md-4">
+    <div class="small-card card">
+      <img class="img-fluid" :src="card.src" alt="Card image cap" />
+      <div class="card-body text-start">
+        <span class="badge bg-secondary">{{ card.date }}</span>
+        <h5 class="card-title">{{ card.title }}</h5>
+        <p class="card-text">
+          {{ card.parg }}
+        </p>
+        <span class="read_more">
+          <a href="/subnewsviews">{{ card.goto }}</a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16.829"
+            height="11.947"
+            viewBox="0 0 16.829 11.947"
+          >
+            <g
+              id="Group_1438"
+              data-name="Group 1438"
+              transform="translate(1.151 0.848)"
             >
-              <g
-                id="Group_1438"
-                data-name="Group 1438"
-                transform="translate(1.151 0.848)"
-              >
-                <line
-                  id="Line_3"
-                  data-name="Line 3"
-                  y1="0.372"
-                  x2="15"
-                  transform="translate(-0.383 5.122)"
-                  fill="none"
-                  stroke="#013299"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1.5"
-                />
-                <line
-                  id="Line_4"
-                  data-name="Line 4"
-                  y1="5"
-                  x2="5"
-                  transform="translate(9.617 5.039)"
-                  fill="none"
-                  stroke="#013299"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1.5"
-                />
-                <line
-                  id="Line_5"
-                  data-name="Line 5"
-                  x2="5"
-                  y2="5"
-                  transform="translate(9.617 0.212)"
-                  fill="none"
-                  stroke="#013299"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1.5"
-                />
-              </g>
-            </svg>
-          </span>
-        </div>
+              <line
+                id="Line_3"
+                data-name="Line 3"
+                y1="0.372"
+                x2="15"
+                transform="translate(-0.383 5.122)"
+                fill="none"
+                stroke="#013299"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+              />
+              <line
+                id="Line_4"
+                data-name="Line 4"
+                y1="5"
+                x2="5"
+                transform="translate(9.617 5.039)"
+                fill="none"
+                stroke="#013299"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+              />
+              <line
+                id="Line_5"
+                data-name="Line 5"
+                x2="5"
+                y2="5"
+                transform="translate(9.617 0.212)"
+                fill="none"
+                stroke="#013299"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+              />
+            </g>
+          </svg>
+        </span>
       </div>
     </div>
+  </div>
 </template>
 
 <script>
 export default {
   name: "cards",
-  props:['card']
+  props: ["card"],
 };
 </script>
 
 
 <style lang="scss" scoped>
 .third-col {
+  font-family: Ubuntu-R;
   .small-card {
     border: none;
     box-shadow: 0 3px 6px rgb(0, 0, 0, 16%);
     padding: 16px;
     border-radius: 20px;
-    h3 {
-      margin-bottom: 12px;
-      span {
-        font-size: 18px;
+    .card-body {
+      span:nth-child(1) {
+        font-size: 16px;
         font-weight: normal;
         background-color: #e2f3ff !important;
         color: #1d8d99;
+        padding: 11px 8px;
+        border-radius: 10px;
+        margin-bottom: 12px;
       }
-    }
-    h5 {
-      font-size: 1.4rem;
-      font-weight: bold;
-      line-height: 35px;
-    }
-    p {
-      line-height: 22px;
-      color: rgb(112, 112, 112, 100%);
-    }
-    .read_more {
-      display: flex;
-      align-items: center;
-      column-gap: 10px;
-      justify-content: flex-end;
-      a {
-        text-decoration: none;
-        color: var(--color_text_buttontwo);
-        font-weight: 600;
+      h5 {
+        font-size: 1.4rem;
+        font-family: Ubuntu-B;
+        line-height: 35px;
       }
-      svg {
-        font-weight: 600;
+      p {
+        line-height: 22px;
+        color: rgb(112, 112, 112, 100%);
+      }
+      .read_more {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        justify-content: flex-end;
+        a {
+          text-decoration: none;
+          color: var(--color_text_buttontwo);
+         
+        }
+        svg {
+          font-weight: 600;
+        }
       }
     }
   }

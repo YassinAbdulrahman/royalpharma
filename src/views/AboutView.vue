@@ -34,11 +34,6 @@
       </div>
     </div>
 
-    <div class="second-section">
-      <div class="container">
-        <div class="sub-second-section"></div>
-      </div>
-    </div>
     <!-- Section three  -->
     <div class="section-three">
       <h2>Our Mission & vision</h2>
@@ -50,7 +45,7 @@
       <div class="sub-section">
         <div class="container">
           <div class="inner-sub-section">
-            <div class="row">
+            <div class="row justify-content-center align-items-center">
               <div class="col-lg-6">
                 <div class="first-col">
                   <h1>Managing Director Message</h1>
@@ -105,10 +100,7 @@
               </div>
               <div class="col-lg-6">
                 <div class="second-col">
-                  <img
-                    src="../assets/about/Group 1429.png"
-                    alt="photo"
-                  />
+                  <img src="../assets/about/Group 1429.png" alt="photo" />
                 </div>
               </div>
             </div>
@@ -235,11 +227,11 @@ export default {
   @mixin heading {
     font-size: 3rem;
     color: var(--color_text_buttontwo);
-    font-weight: 400;
+    font-family: Ubuntu-M;
     margin-bottom: 45px;
   }
   .first-block {
-    padding-top: 30px;
+    padding-top: 25px;
     padding-bottom: 70px;
     @media (max-width: 991px) {
       padding-top: 10px;
@@ -252,6 +244,11 @@ export default {
       }
       h2 {
         color: #013299;
+        font-family: Ubuntu-M;
+        margin: 0;
+        margin-bottom: 31px;
+        line-height: 55px;
+        font-size: 3rem;
         @media (max-width: 768px) {
           text-align: center;
         }
@@ -260,6 +257,8 @@ export default {
         font-size: 3rem;
         margin: 0;
         color: #1e1515;
+        font-family: Ubuntu-B;
+        margin-bottom: 20px;
         @media (max-width: 768px) {
           text-align: center;
         }
@@ -277,7 +276,6 @@ export default {
           font-size: 1.5rem;
           line-height: 38.4px;
           padding-right: 36px;
-          font-weight: 500;
         }
       }
       ::-webkit-scrollbar {
@@ -288,7 +286,7 @@ export default {
         border-radius: 3px;
       }
       ::-webkit-scrollbar-thumb {
-        background-color: var(--webkit-scrollbar-thumb);
+        background: var(--webkit-scrollbar-thumb);
         border-radius: 3px;
       }
     }
@@ -307,11 +305,18 @@ export default {
     }
     .sub-section {
       background-image: linear-gradient(to bottom, #013299, #395faf);
+      height: 500px;
       .inner-sub-section {
         .first-col {
           text-align: left;
           h1 {
             color: var(--color-text-navlink);
+            font-size: 48px;
+            font-family: Ubuntu-M;
+            line-height: 60px;
+            width: 427px;
+            margin: 0;
+            margin-bottom: 24px;
           }
           .scroll-pargrah {
             width: 566px;
@@ -324,7 +329,8 @@ export default {
               height: 256px;
               color: var(--color-text-navlink);
               font-size: 1.5rem;
-              line-height: 38.4px;
+              line-height: 32px;
+              padding-right: 20px;
             }
           }
           ::-webkit-scrollbar {
@@ -335,7 +341,7 @@ export default {
             border-radius: 3px;
           }
           ::-webkit-scrollbar-thumb {
-            background-color: var(--webkit-scrollbar-thumb);
+            background: var(--webkit-scrollbar-thumb);
             border-radius: 3px;
           }
         }
@@ -361,9 +367,11 @@ export default {
           margin-top: 15px;
         }
         .tabs-choose {
-          padding-bottom: 20px;
           cursor: pointer;
           position: relative;
+          padding: 0 0 20px 0;
+          text-align: start;
+          padding-left: 14px;
           li {
             display: inline-block;
             font-size: 20px;

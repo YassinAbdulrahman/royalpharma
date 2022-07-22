@@ -6,9 +6,12 @@
           <div class="row">
             <div class="col second-col">
               <div class="small-card card" style="width: 100%; height: 100%">
-                 <img src="../assets/cards/bigcardrecipient.png" alt="card img">
+                <img
+                  src="../assets/cards/bigcardrecipient.png"
+                  alt="card img"
+                />
                 <div class="card-body text-md-start">
-                  <h3><span class="badge bg-secondary">20 jan 2022</span></h3>
+                  <span class="badge bg-secondary">20 jan 2022</span>
                   <h5 class="card-title">Get to know the sinovac vaccine</h5>
                   <p class="card-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -74,8 +77,11 @@
         </div>
         <div class="second-row">
           <div class="row gy-3">
-            <h2 v-scroll-reveal.reset="{delay:400}">similar articles</h2>
-            <div class="third-col col-md-4" v-scroll-reveal.reset="{delay:600}">
+            <h2 v-scroll-reveal.reset="{ delay: 420 }">similar articles</h2>
+            <div
+              class="third-col col-md-4"
+              v-scroll-reveal.reset="{ delay: 500 }"
+            >
               <div class="small-card card">
                 <img
                   class="img-fluid"
@@ -143,7 +149,10 @@
                 </div>
               </div>
             </div>
-            <div class="third-col col-md-4" v-scroll-reveal.reset="{delay:600}">
+            <div
+              class="third-col col-md-4"
+              v-scroll-reveal.reset="{ delay: 500 }"
+            >
               <div class="small-card card">
                 <img
                   class="img-fluid"
@@ -211,7 +220,10 @@
                 </div>
               </div>
             </div>
-            <div class="third-col col-md-4" v-scroll-reveal.reset="{delay:600}">
+            <div
+              class="third-col col-md-4"
+              v-scroll-reveal.reset="{ delay: 500 }"
+            >
               <div class="small-card card">
                 <img
                   class="card-img-top img-fluid"
@@ -283,130 +295,135 @@
         </div>
       </div>
     </div>
-    <app-footer/>
+    <app-footer />
   </div>
 </template>
 
 
 <script>
-import appFooter from '@/components/global/appFooter.vue';
+import appFooter from "@/components/global/appFooter.vue";
 export default {
   name: "Subnewsviews",
-  components:{
-      appFooter
-  }
+  components: {
+    appFooter,
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-.first-row{
-    margin-bottom: 96px;
-    margin-top: 88px;
-.second-col {
-  .small-card {
-    border: none;
-    box-shadow: 0 3px 6px rgb(0, 0, 0, 16%);
-    padding: 24px;
-    border-radius: 20px;
-    h3 {
-      margin-top: 39px;
-      span {
-        font-size: 18px;
-        font-weight: normal;
-        background-color: #e2f3ff !important;
-        color: #1d8d99;
-      }
-    }
-    h5 {
-      font-size: 3rem;
-      line-height: 45px;
-      color: var(--color_text_buttontwo);
-      margin-top: 24px;
-      margin-bottom: 24px;
-    }
-    p {
-      line-height: 38.4px;
-      color: rgb(112, 112, 112, 100%);
-      font-size: 1.5rem;
-      position: relative;
-    }
-    .card-text.speacial {
-      padding-left: 24px;
-    }
-    .card-text.speacial::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 0;
-      height: 85%;
-      width: 10px;
-      background-color: #1d8d99;
-      transform: translateY(-50%);
-    }
-    .read_more {
-      display: flex;
-      align-items: center;
-      column-gap: 10px;
-      justify-content: flex-end;
-      a {
-        text-decoration: none;
-        color: var(--color_text_buttontwo);
-        font-weight: 600;
-      }
-      svg {
-        font-weight: 600;
+.first-row {
+  font-family: Ubuntu-R;
+  margin-bottom: 96px;
+  margin-top: 88px;
+  .second-col {
+    .small-card {
+      border: none;
+      box-shadow: 0 3px 6px rgb(0, 0, 0, 16%);
+      padding: 24px;
+      border-radius: 20px;
+      .card-body {
+        padding: 0;
+        padding-top: 39px;
+        span {
+          font-size: 18px;
+          font-weight: normal;
+          background-color: #e2f3ff !important;
+          color: #1d8d99;
+          border-radius: 10px !important;
+          padding: 12px;
+        }
+        h5 {
+          font-size: 3rem;
+          line-height: 55px;
+          color: var(--color_text_buttontwo);
+          margin-top: 24px;
+          margin-bottom: 24px;
+          font-family: Ubuntu-M;
+        }
+        p {
+          line-height: 38.4px;
+          color: rgb(112, 112, 112, 100%);
+          font-size: 1.5rem;
+          position: relative;
+        }
+        .card-text.speacial {
+          padding-left: 24px;
+        }
+        .card-text.speacial::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 0;
+          height: 85%;
+          width: 10px;
+          background-color: #1d8d99;
+          transform: translateY(-50%);
+        }
+        .read_more {
+          display: flex;
+          align-items: center;
+          column-gap: 10px;
+          justify-content: flex-end;
+          a {
+            text-decoration: none;
+            color: var(--color_text_buttontwo);
+            font-weight: 600;
+          }
+          svg {
+            font-weight: 600;
+          }
+        }
       }
     }
   }
- }
 }
 .second-row {
-    margin-bottom:100px ;
+  margin-bottom: 100px;
   h2 {
     font-size: 3rem;
     color: var(--color_text_buttontwo);
     text-align: left;
     margin-bottom: 24px;
   }
- .third-col {
-  .small-card {
-    border: none;
-    box-shadow: 0 3px 6px rgb(0, 0, 0, 16%);
-    padding: 16px;
-    border-radius: 20px;
-    h3 {
-      margin-bottom: 12px;
-      span {
-        font-size: 18px;
-        font-weight: normal;
-        background-color: #e2f3ff !important;
-        color: #1d8d99;
+  .third-col {
+    .small-card {
+      border: none;
+      box-shadow: 0 3px 6px rgb(0, 0, 0, 16%);
+      padding: 16px;
+      border-radius: 20px;
+      h3 {
+        margin-bottom: 12px;
+        span {
+          font-size: 18px;
+          font-weight: normal;
+          background-color: #e2f3ff !important;
+          color: #1d8d99;
+        }
+      }
+      h5 {
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 35px;
+      }
+      p {
+        line-height: 22px;
+        color: rgb(112, 112, 112, 100%);
+      }
+      .read_more {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        justify-content: flex-end;
+        a {
+          text-decoration: none;
+          color: var(--color_text_buttontwo);
+          font-weight: 600;
+        }
+        svg {
+          font-weight: 600;
+        }
       }
     }
-    h5 {
-      font-size: 1.4rem;
-      font-weight: bold;
-      line-height: 35px;
-    }
-    p {
-      line-height: 22px;
-      color: rgb(112, 112, 112, 100%);
-    }
-    .read_more {
-      display: flex;
-      align-items: center;
-      column-gap: 10px;
-      justify-content: flex-end;
-      a {
-        text-decoration: none;
-        color: var(--color_text_buttontwo);
-        font-weight: 600;
-      }
-      svg {
-        font-weight: 600;
-      }
-    }
-  }
   }
 }
 </style>

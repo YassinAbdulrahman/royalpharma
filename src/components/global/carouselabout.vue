@@ -44,12 +44,7 @@
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 
 // import swiper module styles
-import "swiper/swiper-bundle.css";
-import "swiper/swiper.min.css";
-
-// modules styles
-import "swiper/components/navigation/navigation.min.css";
-import "swiper/components/pagination/pagination.min.css";
+import "swiper/swiper.scss";
 
 export default {
   name: "carouselabout",

@@ -13,7 +13,6 @@
                 pharmaceuticals importing and distribution company.
               </p>
             </div>
-
             <div class="left-btn d-flex justify-content-end">
               <button>Read More</button>
             </div>
@@ -21,32 +20,46 @@
           <div class="col-md-6">
             <img
               class="img-fluid"
-              src="../assets/landing/Group 1495.png"
-              alt="left"
+              src="../assets/GGGG/royalpharmara.png"
+              alt="left_logo"
             />
           </div>
-        </div>
-        <a href="#">
-          <div class="scroll">
-            <div class="scrolldown">
-              <span></span>
-              <span></span>
-              <span></span>
+          <a href="#second-section">
+            <div class="scroll">
+              <div class="scrolldown">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <p>Scroll</p>
             </div>
-          </div>
-          <p>Scroll</p>
-        </a>
+          </a>
+        </div>
       </div>
     </div>
-    <div class="second-section">
+    <div class="second-section" id="second-section">
       <div class="container">
         <h2>Our Offerings</h2>
         <div class="sub-second-section">
-          <ouroffering />
-          <ouroffering />
-          <ouroffering />
-          <ouroffering />
-          <ouroffering />
+          <div class="row first-row">
+            <div class="col-lg-4">
+              <ouroffering />
+            </div>
+            <div class="col-lg-4">
+              <ouroffering />
+            </div>
+            <div class="col-lg-4">
+              <ouroffering />
+            </div>
+          </div>
+          <div class="row justify-content-center second-row">
+            <div class="col-lg-4">
+              <ouroffering />
+            </div>
+            <div class="col-lg-4">
+              <ouroffering />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -120,9 +133,11 @@
       </div>
     </div>
     <div class="fourth-section">
+      <ourpeople-icon class="svg_one" />
+      <ourpeople-icon class="svg_two" />
       <div class="container">
         <div class="text text-center">
-          <h2>Royal Pharmain Yemen</h2>
+          <h2>Our People</h2>
         </div>
         <div class="row mt-3">
           <newcards
@@ -155,7 +170,7 @@
 <script>
 import appFooter from "@/components/global/appFooter.vue";
 import carouselcompany from "@/components/home/carouselcompany.vue";
-import newcarusel from "@/components/home/NewCarusel.vue";
+  
 import cards from "@/components/news/card.vue";
 import newcards from "@/components/about/newcard.vue";
 import appHeadertwo from "@/components/global/appHeadertwo.vue";
@@ -167,7 +182,6 @@ export default {
   components: {
     appFooter,
     carouselcompany,
-    newcarusel,
     cards,
     newcards,
     appHeadertwo,
@@ -206,13 +220,14 @@ export default {
 @mixin heading {
   font-size: 3rem;
   color: var(--color_text_buttontwo);
-  font-weight: 400;
-  margin-bottom: 45px;
+  font-family: Ubuntu-M;
+  margin-bottom: 48px;
 }
 .home {
+  font-family: Ubuntu-R, sans-serif;
   .first-section {
     height: 100vh;
-    background-image: url('../assets/GGGG/backgroundfrist_section.png');
+    background-image: url("../assets/GGGG/backgroundfrist_section.png");
     background-position: center;
     background-size: cover;
     object-fit: contain;
@@ -220,129 +235,124 @@ export default {
     @media only screen and (max-width: 991px) {
       height: auto;
     }
+    @media (min-width: 1240px) and (max-width: 1518px) {
+      .container {
+        max-width: 1000px;
+      }
+    }
     .text-div {
-      @media (min-width: 1366px) and (max-width: 1518px) {
-        padding-left: 55px;
-      }
-    }
-    h1 {
-      font-size: 40px;
-      color: #013299;
-      margin: 0;
-      position: relative;
-      @media screen and (min-width: 1400px) {
+      h1 {
         font-size: 60px;
-      }
-      @media only screen and (max-width: 1366px) {
-        font-size: 55px;
-      }
-    }
-    h4 {
-      font-size: 36px;
-      color: #013299;
-      letter-spacing: 1px;
-      @media (min-width: 1366px) and (max-width: 1518px) {
-        font-size: 33px;
-      }
-    }
-    p {
-      font-size: 24px;
-      line-height: 38px;
-      width: 100%;
-      height: 109px;
-      margin-top: 2.25rem;
-      @media (min-width: 1366px) and (max-width: 1518px) {
-        font-size: 22px;
-      }
-    }
-    @media (min-width: 1300px) and (max-width: 1399px) {
-      .left-btn {
-        padding-right: 0.9rem;
-      }
-    }
-    @media (min-width: 1400px) and (max-width: 2049px) {
-      .left-btn {
-        padding-right: 6rem;
-      }
-    }
-    @media (max-width: 768px) {
-      .left-btn {
-        justify-content: center !important;
-      }
-    }
-    button {
-      border: none;
-      color: #edeff5;
-      width: 192px;
-      height: 47px;
-      border-radius: 28px;
-      background-image: linear-gradient(to right, #013299, #395faf);
-      font-size: 1.5rem;
-      margin-top: 5.25rem;
-    }
-    a {
-      text-decoration: none;
-      @media (min-width: 1366px) and (max-width: 1518px) {
-        display: block;
-        position: absolute;
-        left: 50%;
-        bottom: -86px;
-      }
-    }
-    p {
-      padding-right: 30px;
-      color: #1d48a4;
-      font-weight: 400;
-    }
-    .scroll {
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      position: relative;
-      .scrolldown {
-        width: 30px;
-        height: 30px;
-        transform: translateX(-50%) rotate(45deg);
-        span {
-          position: absolute;
-          top: 0;
-          left: 0;
-          display: block;
-          width: 100%;
-          height: 100%;
-          border-bottom: 2px solid #e52421;
-          border-right: 2px solid #e52421;
-          animation: animate 2.2s linear infinite;
+        font-family: Ubuntu-B;
+        color: var(--color_text_buttontwo);
+        margin: 0;
+        @media (min-width: 1240px) and (max-width: 1518px) {
+          font-size: 52px;
         }
-        span:nth-child(1) {
-          transform: translate(-15px, -15px);
-          animation-delay: -0.4s;
+      }
+      h4 {
+        font-size: 36px;
+        color: var(--color_text_buttontwo);
+        letter-spacing: 1.5px;
+        @media (min-width: 1240px) and (max-width: 1518px) {
+          font-size: 31px;
         }
-        span:nth-child(2) {
-          transform: translate(0, 0);
-          animation-delay: -0.2s;
+      }
+      p {
+        width: 536px;
+        max-width: 100%;
+        font-size: 24px;
+        line-height: 38px;
+        color: var(--black-color);
+        margin-top: 36px;
+        @media (min-width: 991px) and (max-width: 1366px) {
+          font-size: 22px;
         }
-        span:nth-child(3) {
-          transform: translate(15px, 15px);
-          animation-delay: 0s;
-        }
-        @keyframes animate {
-          0% {
-            top: -5px;
-            left: -5px;
-            opacity: 0;
-          }
-          25% {
-            top: 0px;
-            left: 0px;
-            opacity: 1;
-          }
+      }
+    }
 
-          50%,
-          100% {
-            top: 5px;
-            left: 5px;
-            opacity: 0;
+    .left-btn {
+      width: 536px;
+      max-width: 100%;
+      button {
+        border: none;
+        color: #edeff5;
+        width: 192px;
+        height: 47px;
+        border-radius: 28px;
+        background-image: linear-gradient(to right, #013299, #395faf);
+        font-size: 1.5rem;
+        margin-top: 84px;
+      }
+      @media (max-width: 768px) {
+        .left-btn {
+          justify-content: center !important;
+        }
+      }
+    }
+
+    a {
+      width: 40px;
+      height: 56.06px;
+      text-decoration: none;
+      position: absolute;
+      left: 50%;
+      bottom: 7%;
+      transform: translateX(-50%);
+      .scroll {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        .scrolldown {
+          width: 17.99px;
+          height: 17.99px;
+          margin: auto;
+          transform: translateX(-50%) rotate(45deg);
+          margin-bottom: 32px;
+
+          span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-bottom: 2px solid #e52421;
+            border-right: 2px solid #e52421;
+            animation: animate 2.2s linear infinite;
+          }
+          span:nth-child(1) {
+            transform: translate(-15px, -15px);
+            animation-delay: -0.4s;
+          }
+          span:nth-child(2) {
+            transform: translate(0, 0);
+            animation-delay: -0.2s;
+          }
+          span:nth-child(3) {
+            transform: translate(15px, 15px);
+            animation-delay: 0s;
+          }
+          @keyframes animate {
+            0% {
+              top: -5px;
+              left: -5px;
+              opacity: 0;
+            }
+            25% {
+              top: 0px;
+              left: 0px;
+              opacity: 1;
+            }
+
+            50%,
+            100% {
+              top: 5px;
+              left: 5px;
+              opacity: 0;
+            }
           }
         }
       }
@@ -352,18 +362,16 @@ export default {
     padding-top: 100px;
     padding-bottom: 100px;
     h2 {
-      @include heading
+      @include heading;
     }
-    .sub-second-section {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-      gap: 40px 31px;
+    .second-row {
+      margin-top: 64px;
     }
   }
   .thired-section {
     padding-bottom: 100px;
-    h2{
-      @include heading
+    h2 {
+      @include heading;
     }
     .subsection {
       .card {
@@ -382,11 +390,22 @@ export default {
             padding: 11px 8px 10px;
             color: #1d8d99;
             margin: 16px 0 12px 0;
+            font-family: Ubuntu-R;
+            font-size: 16px;
+            font-weight: normal;
           }
           .card-title {
             color: #1a1e26;
             font-size: 24px;
-            font-weight: bold;
+            font-family: Ubuntu-B;
+            letter-spacing: -1px;
+          }
+          .card-text {
+            margin-top: 0;
+            margin-bottom: 24px;
+            font-family: Ubuntu-R;
+            color: #707070;
+            font-size: 16px;
           }
           a {
             display: block;
@@ -395,7 +414,6 @@ export default {
             padding: 0;
             text-transform: capitalize;
             color: #013299;
-
             svg {
               margin-left: 10.7px;
             }
@@ -405,11 +423,27 @@ export default {
     }
   }
   .fourth-section {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+    .svg_one {
+      position: absolute;
+      left: 1349.97px;
+      top: 63px;
+      @media (min-width: 1000px) and (max-width: 1400px) {
+           left: 920px;
+      }
+    }
+
+    .svg_two {
+      position: absolute;
+      left: -303.79px;
+      top: 10px;
+    }
     .text {
       h2 {
-         @include heading
+        @include heading;
       }
     }
   }
@@ -419,10 +453,12 @@ export default {
     .head {
       h2 {
         @include heading;
+        margin-bottom: 24px;
       }
       p {
         font-size: 1.5rem;
         color: #1a1e26;
+        font-family: Ubuntu-R;
       }
     }
   }

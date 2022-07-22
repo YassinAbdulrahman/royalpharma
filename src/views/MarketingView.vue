@@ -13,96 +13,192 @@
             quality of our services
           </p>
         </div>
-        <div class="con-box">
-          <div class="big-card d-flex justify-content-center">
-            <div class="small-card d-flex justify-content-center">
-              <img
-                src="../assets/about/Group 1424.png"
-                class="img-fluid"
-                alt="photo of card"
-              />
-              <div class="card-info d-flex">
-                <span>5</span>
-                <p>quality assurance & regulatory affairs specialists</p>
+        <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div class="big-card">
+              <div class="small-card">
+                <img
+                  src="../assets/about/Group 1424.png"
+                  class="img-fluid"
+                  alt="photo of card"
+                />
+                <div class="card-info d-flex">
+                  <span>5</span>
+                  <p>quality assurance & regulatory affairs specialists</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="big-card d-flex justify-content-center">
-            <div class="small-card d-flex justify-content-center">
-              <img
-                src="../assets/about/Group 1424.png"
-                class="img-fluid"
-                alt="photo of card"
-              />
-              <div class="card-info d-flex">
-                <span>5</span>
-                <p>quality assurance & regulatory affairs specialists</p>
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div class="big-card">
+              <div class="small-card">
+                <img
+                  src="../assets/card Go/1.png"
+                  class="img-fluid"
+                  alt="photo of card"
+                />
+                <div class="card-info d-flex">
+                  <span>40</span>
+                  <p>pharmacists</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="big-card d-flex justify-content-center">
-            <div class="small-card d-flex justify-content-center">
-              <img
-                src="../assets/about/Group 1424.png"
-                class="img-fluid"
-                alt="photo of card"
-              />
-              <div class="card-info d-flex">
-                <span>5</span>
-                <p>quality assurance & regulatory affairs specialists</p>
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div class="big-card">
+              <div class="small-card">
+                <img
+                  src="../assets/card Go/3.png"
+                  class="img-fluid"
+                  alt="photo of card"
+                />
+                <div class="card-info d-flex">
+                  <span>30</span>
+                  <p>Sales Persons</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="big-card d-flex justify-content-center">
-            <div class="small-card d-flex justify-content-center">
-              <img
-                src="../assets/about/Group 1424.png"
-                class="img-fluid"
-                alt="photo of card"
-              />
-              <div class="card-info d-flex">
-                <span>5</span>
-                <p>quality assurance & regulatory affairs specialists</p>
-              </div>
-            </div>
-          </div>
-          <div class="big-card d-flex justify-content-center">
-            <div class="small-card d-flex justify-content-center">
-              <img
-                src="../assets/about/Group 1424.png"
-                class="img-fluid"
-                alt="photo of card"
-              />
-              <div class="card-info d-flex">
-                <span>5</span>
-                <p>quality assurance & regulatory affairs specialists</p>
-              </div>
-            </div>
-          </div>
-          <div class="big-card d-flex justify-content-center">
-            <div class="small-card d-flex justify-content-center">
-              <img
-                src="../assets/about/Group 1424.png"
-                class="img-fluid"
-                alt="photo of card"
-              />
-              <div class="card-info d-flex">
-                <span>5</span>
-                <p>quality assurance & regulatory affairs specialists</p>
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div class="big-card">
+              <div class="small-card">
+                <img
+                  src="../assets/about/Group 1424.png"
+                  class="img-fluid"
+                  alt="photo of card"
+                />
+                <div class="card-info d-flex">
+                  <span>15</span>
+                  <p>Logistics & Supply Chain Persons</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="row justify-content-center gy-5">
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div class="big-card">
+              <div class="small-card">
+                <img
+                  src="../assets/about/Group 1424.png"
+                  class="img-fluid"
+                  alt="photo of card"
+                />
+                <div class="card-info d-flex">
+                  <span>24</span>
+                  <p>Financial , commercial & administrative person</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div class="big-card">
+              <div class="small-card">
+                <img
+                  src="../assets/card Go/3.png"
+                  class="img-fluid"
+                  alt="photo of card"
+                />
+                <div class="card-info d-flex">
+                  <span>6</span>
+                  <p>Engineers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="con-box">
+          <div class="big-card d-flex justify-content-start">
+            <div class="small-card d-flex justify-content-center">
+              <img
+                src="../assets/about/Group 1424.png"
+                class="img-fluid"
+                alt="photo of card"
+              />
+              <div class="card-info d-flex">
+                <span>5</span>
+                <p>quality assurance & regulatory affairs specialists</p>
+              </div>
+            </div>
+          </div>
+          <div class="big-card d-flex justify-content-start">
+            <div class="small-card d-flex justify-content-center">
+              <img
+                src="../assets/about/Group 1424.png"
+                class="img-fluid"
+                alt="photo of card"
+              />
+              <div class="card-info d-flex">
+                <span>40</span>
+                <p>pharmacists</p>
+              </div>
+            </div>
+          </div>
+          <div class="big-card d-flex justify-content-start">
+            <div class="small-card d-flex justify-content-center">
+              <img
+                src="../assets/about/Group 1424.png"
+                class="img-fluid"
+                alt="photo of card"
+              />
+              <div class="card-info d-flex">
+                <span>30</span>
+                <p>Sales Persons</p>
+              </div>
+            </div>
+          </div>
+          <div class="big-card d-flex justify-content-start">
+            <div class="small-card d-flex justify-content-center">
+              <img
+                src="../assets/about/Group 1424.png"
+                class="img-fluid"
+                alt="photo of card"
+              />
+              <div class="card-info d-flex">
+                <span>15</span>
+                <p>Logistics & Supply Chain Persons</p>
+              </div>
+            </div>
+          </div>
+          <div class="big-card d-flex justify-content-start">
+            <div class="small-card d-flex justify-content-center">
+              <img
+                src="../assets/about/Group 1424.png"
+                class="img-fluid"
+                alt="photo of card"
+              />
+              <div class="card-info d-flex">
+                <span>24</span>
+                <p>Financial , commercial & administrative person</p>
+              </div>
+            </div>
+          </div>
+          <div class="big-card d-flex justify-content-center">
+            <div class="small-card d-flex justify-content-center">
+              <img
+                src="../assets/about/Group 1424.png"
+                class="img-fluid"
+                alt="photo of card"
+              />
+              <div class="card-info d-flex">
+                <span>6</span>
+                <p>Engineers</p>
+              </div>
+            </div>
+          </div>
+        </div> -->
       </div>
     </div>
 
     <!-- Section three -->
     <div class="fifth_section pt-5 pb-5">
+      <ourpeople-icon class="svg_one" />
+      <ourpeople-icon class="svg_two" />
       <div class="container">
         <div class="text text-center">
           <h2>Royal Pharmain Yemen</h2>
         </div>
-        <div class="row mt-5">
+        <div class="row">
           <newcards
             v-for="product in products"
             :key="product.id"
@@ -256,6 +352,7 @@ export default {
 
 <style lang="scss" scoped>
 .fourth_section {
+  font-family: Ubuntu-R;
   margin-top: 100px;
   margin-bottom: 100px;
   .text {
@@ -263,6 +360,7 @@ export default {
       margin-bottom: 24px;
       font-size: 3rem;
       color: var(--heading-about-section);
+      font-family: Ubuntu-M;
     }
     p {
       font-size: 1.5rem;
@@ -270,41 +368,42 @@ export default {
       color: var(--paragrah-about-section);
     }
   }
-  .con-box {
-    display: grid;
-    gap: 3rem 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    place-items: center;
-    .big-card {
-      margin-top: 40px;
-      background-color: var(--boxes-in-about-section);
-      border-radius: 0 20px 20px 20px;
-      width: 100%;
-      height: 195px;
-      position: relative;
-      align-items: center;
-      box-shadow: 0px 3px 6px rgb(0, 0, 0, 16%);
-      img {
-        position: absolute;
-        top: -50%;
-        left: -2.5%;
-        width: 90px;
-        height: 93px;
-        transform: translateY(50%);
-      }
-      .small-card {
-        .card-info {
+
+  .big-card {
+    margin-top: 60px;
+    background-color: var(--boxes-in-about-section);
+    border-radius: 0 20px 20px 20px;
+    position: relative;
+    align-items: center;
+    box-shadow: 0px 3px 6px rgb(0, 0, 0, 16%);
+    img {
+      position: absolute;
+      top: -50%;
+      left: -2.5%;
+      width: 90px;
+      height: 93px;
+      transform: translateY(50%);
+    }
+    .small-card {
+      padding: 3px;
+      .card-info {
+        align-items: center;
+        margin-top: 26px;
+        span {
+          color: var(--heading-about-section);
+          font-size: 6.5rem;
+          font-family: Ubuntu-R;
+        }
+        p {
+          color: #013299;
+          font-size: 1.5rem;
+          font-family: Ubuntu-R;
+          text-align: left;
+          line-height: 32px;
+          letter-spacing: -1px;
+          display: flex;
           align-items: center;
-          span {
-            color: var(--heading-about-section);
-            font-size: 6.5rem;
-          }
-          p {
-            color: #013299;
-            width: 204px;
-            height: 87px;
-            font-size: 1.5rem;
-          }
+          margin-top: 1rem;
         }
       }
     }
@@ -319,34 +418,31 @@ export default {
 .fifth_section {
   margin-top: 100px;
   margin-bottom: 100px;
+  position: relative;
+  overflow: hidden;
+  .svg_one {
+    position: absolute;
+    left: 1349.97px;
+    top: 63px;
+    @media (min-width: 1000px) and (max-width: 1400px) {
+      left: 920px;
+    }
+  }
+
+  .svg_two {
+    position: absolute;
+    left: -303.79px;
+    top: 10px;
+  }
   .text {
     h2 {
       font-size: 3rem;
       color: var(--heading-about-section);
+      font-family: Ubuntu-M;
+      line-height: 55px;
     }
   }
 }
-.fourth_section {
-  .sub-fourth-section {
-    background: #e2f3ff;
-    width: 90%;
-    border-radius: 0 251px 0 0;
-    padding-left: 350px;
-    padding-top: 48px;
-    padding-bottom: 48px;
-    .content-pargragph {
-      p {
-        width: 674px;
-        height: 312px;
-        text-align: left;
-        font-size: 24px;
-        line-height: 38.4px;
-        color: #1a1e26;
-      }
-    }
-  }
-}
-
 .section_six {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -512,7 +608,7 @@ export default {
       color: var(--color_text_buttontwo);
     }
     .box {
-      background-image: linear-gradient(to right, #013299, #395faf);
+      background-image: linear-gradient(to left, #013299, #395faf);
       border-radius: 107px;
       width: 100%;
       height: 100%;
@@ -535,7 +631,7 @@ export default {
           display: inline-block;
           font-size: 3rem;
           color: var(--color-text-navlink);
-          font-weight: 600;
+          font-family: Ubuntu-B;
         }
         p {
           color: var(--small-four-box-about);
@@ -608,6 +704,7 @@ export default {
           font-size: 48px;
           color: #013299;
           line-height: 55px;
+          font-family: Ubuntu-M;
         }
         p {
           width: 578px;

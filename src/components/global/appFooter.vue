@@ -171,11 +171,12 @@ export default {
   place-items: center;
   height: 100%;
   position: relative;
+  font-family: Ubuntu-R;
   &::before {
     content: "";
     position: absolute;
     height: 100%;
-    left:0;
+    left: 0;
     right: 0;
     width: 20%;
     background-image: url("/src/assets/footer/footerleftlogo.png");
@@ -183,11 +184,11 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 2;
-    @media (min-width:991px) and (max-width:1366px){
+    @media (min-width: 991px) and (max-width: 1366px) {
       width: 26%;
       left: -90px;
     }
-    @media (max-width:991px) {
+    @media (max-width: 991px) {
       display: none;
     }
   }
@@ -249,6 +250,7 @@ export default {
               color: var(--color-text-navlink);
               font-size: 1.25rem;
               text-decoration: none;
+              font-family: Ubuntu-R;
             }
           }
         }
@@ -284,6 +286,8 @@ export default {
           h3 {
             font-size: 1.5rem;
             text-align: center;
+            font-family: Ubuntu-R;
+            line-height: 28px;
           }
           .list_links {
             span {

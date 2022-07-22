@@ -48,9 +48,12 @@ Vue.component('secondcompanylogo-icon', secondcompanylogo)
 
 import ouroffering from './GGGG/our_offering.svg'
 import arrowcard from './cards/arrowcard.svg'
-
+import our_people from './GGGG/right_our_people.svg'
+import left_our_people from './GGGG/left_our_people.svg'
 Vue.component('ouroffering-icon' , ouroffering)
 Vue.component('arrowcard-icon' , arrowcard)
+Vue.component('ourpeople-icon' , our_people)
+Vue.component('left-ourpeople-icon' , left_our_people)
 
 //About
 import principle from './GGGG/principles.svg'
