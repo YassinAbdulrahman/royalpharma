@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="headertwo sticky-top" v-if="$route.name == 'about'">
+    <div class="headertwo fixed-top" v-if="$route.name == 'about'">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="#"><headerlogotwo-icon /></a>
@@ -55,7 +55,7 @@
         </div>
       </nav>
     </div>
-    <div class="headertwo sticky-top" v-if="$route.name == 'marketingview'">
+    <div class="headertwo fixed-top " v-if="$route.name == 'marketingview'">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="#"><headerlogotwo-icon /></a>
@@ -110,7 +110,7 @@
         </div>
       </nav>
     </div>
-    <div class="headertwo sticky-top" v-if="$route.name == 'news'">
+    <div class="headertwo fixed-top" v-if="$route.name == 'news'">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="#"><headerlogotwo-icon /></a>
@@ -165,7 +165,7 @@
         </div>
       </nav>
     </div>
-    <div class="headertwo sticky-top" v-if="$route.name == 'contactus'">
+    <div class="headertwo fixed-top" v-if="$route.name == 'contactus'">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="#"><headerlogotwo-icon /></a>
@@ -220,7 +220,7 @@
         </div>
       </nav>
     </div>
-    <div class="headertwo sticky-top" v-if="$route.name == 'subnewsviews'">
+    <div class="headertwo fixed-top" v-if="$route.name == 'subnewsviews'">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="#"><headerlogotwo-icon /></a>

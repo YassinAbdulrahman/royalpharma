@@ -2,28 +2,28 @@
 <template>
   <swiper class="swiper" :options="swiperOption">
     <swiper-slide>
-      <div class="first_div">silde 1</div>
+      <div class="first_div"><companylogo-icon/></div>
     </swiper-slide>
     <swiper-slide>
-      <div class="first_div">silde 1</div>
+      <div class="first_div"><companylogo-icon/></div>
     </swiper-slide>
     <swiper-slide>
-      <div class="first_div">silde 1</div>
+      <div class="first_div"><companylogo-icon/></div>
     </swiper-slide>
     <swiper-slide>
-      <div class="first_div">silde 1</div>
+      <div class="first_div"><companylogo-icon/></div>
     </swiper-slide>
     <swiper-slide>
-      <div class="first_div">silde 1</div>
+      <div class="first_div"><companylogo-icon/></div>
     </swiper-slide>
     <swiper-slide>
-      <div class="first_div">silde 1</div>
+      <div class="first_div"><companylogo-icon/></div>
     </swiper-slide>
     <swiper-slide>
-      <div class="first_div">silde 1</div>
+      <div class="first_div"><companylogo-icon/></div>
     </swiper-slide>
     <swiper-slide>
-      <div class="first_div">silde 1</div>
+      <div class="first_div"><companylogo-icon/></div>
     </swiper-slide>
     <swiper-slide>
       <div class="first_div">silde 1</div>
@@ -63,7 +63,8 @@ export default {
 
 <style lang="scss" scoped>
 .first_div {
-  height: auto;
+  width: 237px;
+  height: 180px;
   background-color: #fafafa;
 }
 .swiper-button-next ,

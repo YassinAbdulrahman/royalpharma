@@ -23,6 +23,7 @@ export default {
 
 <style lang="scss" scoped>
 .box {
+  font-family: Ubuntu-R;
   width: 100%;
   height: 331.02px;
   display: grid;

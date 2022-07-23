@@ -231,7 +231,7 @@ export default {
     margin-bottom: 45px;
   }
   .first-block {
-    padding-top: 25px;
+    padding-top: 100px;
     padding-bottom: 70px;
     @media (max-width: 991px) {
       padding-top: 10px;

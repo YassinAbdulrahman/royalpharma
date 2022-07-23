@@ -101,7 +101,7 @@ export default {
   background-image: linear-gradient(to right, #e2f3ff, #f4f7fc);
   box-shadow: 0 3px 6px rgb(0, 0, 0, 16%);
   border-radius: 20px;
-  padding: 48px;
+  padding: 48px 0;
   margin-top: 4.5rem;
   margin-bottom: 4.5rem;
   font-family: Ubuntu-R;

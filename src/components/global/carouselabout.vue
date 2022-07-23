@@ -1,6 +1,6 @@
 <template>
   <div>
-    <swiper class="swiper" :options="swiperOption">
+    <swiper class="swiper" :options="swiperOption" pagination="{ clickable: true }">
       <swiper-slide>
         <div class="swiper-content">
           <div class="sub-swiper-content">
@@ -43,8 +43,7 @@
 <script>
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 
-// import swiper module styles
-import "swiper/swiper.scss";
+import "swiper/css/swiper.css";
 
 export default {
   name: "carouselabout",
@@ -59,6 +58,7 @@ export default {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        
         slidesPerView: 1,
         spaceBetween: 30,
       },
@@ -69,6 +69,7 @@ export default {
 
 <style lang="scss" scoped>
 .swiper-content {
+ 
   .sub-swiper-content {
     background-image: linear-gradient((#013299, #395faf));
     border-radius: 149px;
@@ -97,11 +98,11 @@ export default {
       }
       img {
         position: absolute;
-        width: 30%;
-        left: -14px;
-        top: -5px;
+        width: 32%;
+        left: -28px;
+        top: -1px;
         @media (min-width: 1367px) {
-          width: 30%;
+          width: 32%;
         }
         @media (max-width: 991px) {
           display: none;
@@ -111,16 +112,16 @@ export default {
       h2 {
         font-size: 30px;
         margin-bottom: 23.1px;
-        @media (max-width: 991px) {
-          font-weight: bold;
-        }
+        font-family: Ubuntu-B;
       }
       p {
         font-size: 24px;
         line-height: 29px;
+        padding-top: 23.1px;
         @media (max-width: 991px) {
           font-size: 20px;
         }
+    
       }
     }
   }

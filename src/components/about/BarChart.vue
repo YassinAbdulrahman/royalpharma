@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import { Bar } from 'vue-chartjs/legacy'
+import { Bar } from "vue-chartjs/legacy";
 
 import {
   Chart as ChartJS,
@@ -22,68 +22,71 @@ import {
   Legend,
   BarElement,
   CategoryScale,
-  LinearScale
-} from 'chart.js'
+  LinearScale,
+} from "chart.js";
 
-ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
+ChartJS.register(
+  Title,
+  Tooltip,
+  Legend,
+  BarElement,
+  CategoryScale,
+  LinearScale
+);
 
 export default {
-  name: 'BarChart',
+  name: "BarChart",
   components: {
-    Bar
+    Bar,
   },
   props: {
     chartId: {
       type: String,
-      default: 'bar-chart'
+      default: "bar-chart",
     },
     datasetIdKey: {
       type: String,
-      default: 'label'
+      default: "label",
     },
     width: {
       type: Number,
-      default: 300
+      default: 300,
     },
     height: {
       type: Number,
-      default: 300
+      default: 300,
     },
     cssClasses: {
-      default: '',
-      type: String
+      default: "",
+      type: String,
     },
     styles: {
       type: Object,
-      default: () => {}
+      default: () => {},
     },
     plugins: {
       type: Array,
-      default: () => []
-    }
+      default: () => [],
+    },
   },
   data() {
     return {
       chartData: {
-        labels: [
-          '2015',
-          '2016',
-          '2017',
-          '2018',
-        ],
+        labels: ["2015", "2016", "2017", "2018"],
+
         datasets: [
           {
-            label: '',
-            backgroundColor: '#EB0E0E',
-            data: [30, 50, 75 ,90]  
-          }
-        ]
+            label: "",
+            backgroundColor: "#EB0E0E",
+            data: [10, 30, 50, 80],
+          },
+        ],
       },
       chartOptions: {
         responsive: true,
-        maintainAspectRatio: false
-      }
-    }
-  }
-}
+        maintainAspectRatio: false,
+      },
+    };
+  },
+};
 </script>
