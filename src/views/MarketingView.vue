@@ -353,8 +353,8 @@ export default {
 <style lang="scss" scoped>
 .fourth_section {
   font-family: Ubuntu-R;
-  padding-top: 128px;
-  padding-bottom: 126px;
+  padding-top: 100px;
+  margin-bottom: 100px;
   .text {
     h3 {
       margin-bottom: 24px;

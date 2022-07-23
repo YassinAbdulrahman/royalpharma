@@ -140,7 +140,7 @@
           <h2>Our People</h2>
         </div>
         <div class="row mt-3">
-          <newcards
+          <newcardtwo
             v-for="product in products"
             :key="product.id"
             :product="product"
@@ -172,7 +172,7 @@ import appFooter from "@/components/global/appFooter.vue";
 import carouselcompany from "@/components/home/carouselcompany.vue";
   
 import cards from "@/components/news/card.vue";
-import newcards from "@/components/about/newcard.vue";
+import newcardtwo from "@/components/about/newcardtwo.vue";
 import appHeadertwo from "@/components/global/appHeadertwo.vue";
 import ouroffering from "@/components/home/ourOffering.vue";
 // @ is an alias to /src
@@ -183,7 +183,7 @@ export default {
     appFooter,
     carouselcompany,
     cards,
-    newcards,
+    newcardtwo,
     appHeadertwo,
     ouroffering,
   },

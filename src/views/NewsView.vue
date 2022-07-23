@@ -278,7 +278,7 @@ export default {
 <style lang="scss" scoped>
 .news-content {
   font-family: Ubuntu-R;
-  margin-top: 40px;
+  padding-top: 120px;
   margin-bottom: 40px;
 }
 .first_col {

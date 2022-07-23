@@ -4,6 +4,7 @@
       <div class="inner-text">
         <img class="img-fluid" :src="product.src" alt="newcard img" />
         <div>
+          <h2>+30</h2>
           <p>
             {{ product.text }}
           </p>
@@ -15,7 +16,7 @@
 
 <script>
 export default {
-  name: "newcard",
+  name: "newcardtwo",
   props: ["product"],
 };
 </script>
@@ -40,7 +41,7 @@ export default {
     background-image: linear-gradient(to left, #013299, #395faf);
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end;
     position: relative;
     @media screen and (max-width: 768px) {
       width: 357px;
@@ -52,8 +53,10 @@ export default {
       height: 140px;
     }
     h2 {
+      font-size: 30px;
       text-align: start;
       color: #edeff5;
+       font-family: Ubuntu-B;
     }
     p {
       width: 303px;
@@ -72,6 +75,7 @@ export default {
     img {
       position: absolute;
       left: -100px;
+      top: -85px;
       @media screen and (max-width: 768px) {
         width: 55%;
         left: -30px;
