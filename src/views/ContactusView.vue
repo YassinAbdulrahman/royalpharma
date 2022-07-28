@@ -79,18 +79,14 @@
         </div>
       </div>
     </div>
-    <app-footer />
   </div>
 </template>
 
 <script>
-import appFooter from "@/components/global/appFooter.vue";
 import googlemapping from "@/components/global/map.vue";
-
 export default {
   name: "ContactusView",
   components: {
-    appFooter,
     googlemapping,
   },
 };

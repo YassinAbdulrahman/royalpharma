@@ -1,11 +1,16 @@
 <template>
   <div>
-    <swiper class="swiper" :options="swiperOption" pagination="{ clickable: true }">
+    <swiper class="swiper" :options="swiperOption">
       <swiper-slide>
-        <div class="swiper-content">
-          <div class="sub-swiper-content">
-            <div class="text-content text-start">
-              <h3>Our Mission</h3>
+        <div class="box">
+          <div class="inner-text">
+            <img
+              class="img-fluid"
+              src="../../assets/GGGG/sliderabout.png"
+              alt="newcard img"
+            />
+            <div class="text-card">
+              <h2>Our Mission</h2>
               <p>
                 We import and distribute pharmaceuticals and medical pplianc-es
                 of high quality and affordable prices for improving and
@@ -13,16 +18,20 @@
                 our coun-try. We meet current and future customer needs through
                 continu-ous expansion of our products portfolio.
               </p>
-              <img src="../../assets/GGGG/sliderabout.png" alt="sliderabout" />
             </div>
           </div>
         </div>
       </swiper-slide>
       <swiper-slide>
-        <div class="swiper-content">
-          <div class="sub-swiper-content">
-            <div class="text-content text-start">
-              <h3>Our Mission</h3>
+        <div class="box">
+          <div class="inner-text">
+            <img
+              class="img-fluid"
+              src="../../assets/GGGG/sliderabout.png"
+              alt="newcard img"
+            />
+            <div class="text-card">
+              <h2>Our Mission</h2>
               <p>
                 We import and distribute pharmaceuticals and medical pplianc-es
                 of high quality and affordable prices for improving and
@@ -30,7 +39,6 @@
                 our coun-try. We meet current and future customer needs through
                 continu-ous expansion of our products portfolio.
               </p>
-              <img src="../../assets/GGGG/sliderabout.png" alt="sliderabout" />
             </div>
           </div>
         </div>
@@ -42,11 +50,11 @@
 
 <script>
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
-
 import "swiper/css/swiper.css";
 
 export default {
-  name: "carouselabout",
+  name: "carouselcompany",
+  title: "Loop mode with multiple slides per group",
   components: {
     Swiper,
     SwiperSlide,
@@ -54,13 +62,13 @@ export default {
   data() {
     return {
       swiperOption: {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        
         slidesPerView: 1,
         spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
       },
     };
   },
@@ -68,62 +76,97 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.swiper-content {
- 
-  .sub-swiper-content {
-    background-image: linear-gradient((#013299, #395faf));
+.box {
+  font-family: Ubuntu-R;
+  width: 110%;
+  height: 550px;
+  display: grid;
+  place-content: center;
+  @media screen and (max-width: 768px) {
+    height: 200px;
+  }
+  @media (min-width: 991px) and (max-width: 1366px) {
+    height: 600px;
+  }
+  .inner-text {
+    width: 1104px;
+    height: 301px;
     border-radius: 149px;
-    padding: 20px 20px 20px 40px;
+    background-image: linear-gradient(to left, #013299, #395faf);
     display: flex;
     justify-content: flex-end;
-    width: 90%;
-    @media (min-width: 1367px) {
-      width: 75%;
-    }
-    @media (max-width: 991px) {
-      display: block;
-    }
-    margin: auto;
+    align-items: center;
     position: relative;
-    z-index: 2;
-    .text-content {
-      width: 665px;
-      color: #edeff5;
-      border-radius: 20px;
-      z-index: 2;
-      @media (max-width: 991px) {
-        width: 100%;
-        padding: 20px;
-        text-align: center;
-      }
-      img {
-        position: absolute;
-        width: 32%;
-        left: -28px;
-        top: -1px;
-        @media (min-width: 1367px) {
-          width: 32%;
-        }
-        @media (max-width: 991px) {
-          display: none;
-        }
-      }
-
+    padding: 24.3px 0 10px 0;
+    @media screen and (max-width: 768px) {
+      width: 357px;
+      height: 130px;
+      text-align: left;
+    }
+    @media (min-width: 991px) and (max-width: 1366px) {
+      width: 1000px;
+      height: 260px;
+    }
+    .text-card {
+      width: 65%;
       h2 {
         font-size: 30px;
-        margin-bottom: 23.1px;
+        text-align: start;
+        color: #edeff5;
         font-family: Ubuntu-B;
       }
       p {
-        font-size: 24px;
+        width: 665px;
+        font-size: 23px;
         line-height: 29px;
-        padding-top: 23.1px;
-        @media (max-width: 991px) {
-          font-size: 20px;
+        color: var(--small-four-box-about);
+        font-family: Ubuntu-R;
+        text-align: left;
+        place-self: flex-end;
+        @media screen and (max-width: 768px) {
+          width: 212px;
+          font-size: 1rem;
         }
-    
+        @media (min-width: 991px) and (max-width: 1366px) {
+          width: 634px;
+          
+        }
       }
     }
+    img {
+      position: absolute;
+      left: -130px;
+      top: 35%;
+      width: 485.47px;
+      transform: translateY(-50%);
+      @media screen and (max-width: 768px) {
+        width: 55%;
+        left: -30px;
+      }
+      @media (min-width: 991px) and (max-width: 1366px) {
+        width: 39%;
+        left: -50px;
+      }
+    }
+  }
+}
+.swiper-pagination-bullet {
+  width: 24px;
+  height: 16px;
+  background: red;
+}
+.swiper-pagination {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 56%;
+    transform: translateY(-50%);
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: red;
+    margin: 0 4px;
   }
 }
 </style>

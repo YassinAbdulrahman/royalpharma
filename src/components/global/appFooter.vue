@@ -172,6 +172,7 @@ export default {
   height: 100%;
   position: relative;
   font-family: Ubuntu-R;
+  margin-top: 71px;
   &::before {
     content: "";
     position: absolute;

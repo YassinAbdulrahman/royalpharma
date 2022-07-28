@@ -41,7 +41,7 @@
       <div class="container">
         <h2>Our Offerings</h2>
         <div class="sub-second-section">
-          <div class="row first-row">
+          <div class="row first-row gx-2">
             <div class="col-lg-4">
               <ouroffering />
             </div>
@@ -67,7 +67,7 @@
       <div class="container">
         <h2>latest News</h2>
         <div class="subsection">
-          <div class="row g-4">
+          <div class="row">
             <div class="col-md-4">
               <div class="card">
                 <img
@@ -139,7 +139,7 @@
         <div class="text text-center">
           <h2>Our People</h2>
         </div>
-        <div class="row mt-3">
+        <div class="row">
           <newcardtwo
             v-for="product in products"
             :key="product.id"
@@ -163,14 +163,11 @@
         <carouselcompany />
       </div>
     </div>
-    <app-footer />
   </div>
 </template>
 
 <script>
-import appFooter from "@/components/global/appFooter.vue";
 import carouselcompany from "@/components/home/carouselcompany.vue";
-  
 import cards from "@/components/news/card.vue";
 import newcardtwo from "@/components/about/newcardtwo.vue";
 import appHeadertwo from "@/components/global/appHeadertwo.vue";
@@ -180,7 +177,6 @@ import ouroffering from "@/components/home/ourOffering.vue";
 export default {
   name: "HomeView",
   components: {
-    appFooter,
     carouselcompany,
     cards,
     newcardtwo,
@@ -193,22 +189,22 @@ export default {
         {
           id: 1,
           text: "Governmental Hospitals, including the top 10 major hospitals in Yemen",
-          src: require("../assets/about/logo/newcard.png"),
+          src: require("../assets/New_Card_Home/card_our_people.png"),
         },
         {
           id: 2,
           text: "Governmental Hospitals, including the top 10 major hospitals in Yemen",
-          src: require("../assets/about/logo/newcard.png"),
+          src: require("../assets/New_Card_Home/card_our_people.png"),
         },
         {
           id: 3,
           text: "Governmental Hospitals, including the top 10 major hospitals in Yemen",
-          src: require("../assets/about/logo/newcard.png"),
+          src: require("../assets/New_Card_Home/card_our_people.png"),
         },
         {
           id: 4,
           text: "Governmental Hospitals, including the top 10 major hospitals in Yemen",
-          src: require("../assets/about/logo/newcard.png"),
+          src: require("../assets/New_Card_Home/card_our_people.png"),
         },
       ],
     };
@@ -299,6 +295,9 @@ export default {
       left: 50%;
       bottom: 7%;
       transform: translateX(-50%);
+      @media (min-width: 1500px) {
+        bottom: 10%;
+      }
       .scroll {
         display: flex;
         justify-content: center;
@@ -306,12 +305,11 @@ export default {
         align-items: center;
         position: relative;
         .scrolldown {
-          width: 17.99px;
-          height: 17.99px;
+          width: 14.04px;
+          height: 14.04px;
           margin: auto;
-          transform: translateX(-50%) rotate(45deg);
-          margin-bottom: 32px;
-
+          transform: translateX(-2%) rotate(45deg);
+          margin-bottom: 14px;
           span {
             position: absolute;
             top: 0;
@@ -321,10 +319,9 @@ export default {
             height: 100%;
             border-bottom: 2px solid #e52421;
             border-right: 2px solid #e52421;
-            animation: animate 2.2s linear infinite;
           }
           span:nth-child(1) {
-            transform: translate(-15px, -15px);
+            transform: translate(-8px, -8px);
             animation-delay: -0.4s;
           }
           span:nth-child(2) {
@@ -332,7 +329,7 @@ export default {
             animation-delay: -0.2s;
           }
           span:nth-child(3) {
-            transform: translate(15px, 15px);
+            transform: translate(8px, 8px);
             animation-delay: 0s;
           }
           @keyframes animate {
@@ -359,63 +356,76 @@ export default {
     }
   }
   .second-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 128px;
+    padding-bottom: 137px;
     h2 {
       @include heading;
     }
+    .first-row {
+      --bs-gutter-x: 1.938rem !important;
+      --bs-gutter-y: 1.938rem !important;
+      .col-lg-4{
+        z-index: 10;
+      }
+    
+    }
     .second-row {
-      margin-top: 64px;
+      margin-top: 62px;
+      --bs-gutter-x: 1.938rem !important;
+      --bs-gutter-y: 1.938rem !important;
     }
   }
   .thired-section {
-    padding-bottom: 100px;
+    padding-bottom: 128px;
     h2 {
       @include heading;
     }
     .subsection {
-      .card {
-        border: none;
-        box-shadow: 0 3px 6px rgb(0, 0, 0, 16%);
-        border-radius: 20px;
-        img {
-          padding: 16px 16px 0 16px;
-        }
-        .card-body {
-          padding: 0px 40px 30px 24px !important;
-          span {
-            display: inline-block;
-            background: linear-gradient(#e2f3ff, #f4f7fc);
-            border-radius: 10px;
-            padding: 11px 8px 10px;
-            color: #1d8d99;
-            margin: 16px 0 12px 0;
-            font-family: Ubuntu-R;
-            font-size: 16px;
-            font-weight: normal;
+      > .row {
+        --bs-gutter-x: 1.875rem;
+        .card {
+          border: none;
+          box-shadow: 0 3px 6px rgb(0, 0, 0, 16%);
+          border-radius: 20px;
+          img {
+            padding: 16px 16px 0 16px;
           }
-          .card-title {
-            color: #1a1e26;
-            font-size: 24px;
-            font-family: Ubuntu-B;
-            letter-spacing: -1px;
-          }
-          .card-text {
-            margin-top: 0;
-            margin-bottom: 24px;
-            font-family: Ubuntu-R;
-            color: #707070;
-            font-size: 16px;
-          }
-          a {
-            display: block;
-            outline: none;
-            border: none;
-            padding: 0;
-            text-transform: capitalize;
-            color: #013299;
-            svg {
-              margin-left: 10.7px;
+          .card-body {
+            padding: 0px 40px 30px 24px !important;
+            span {
+              display: inline-block;
+              background: linear-gradient(#e2f3ff, #f4f7fc);
+              border-radius: 10px;
+              padding: 11px 8px 10px;
+              color: #1d8d99;
+              margin: 16px 0 12px 0;
+              font-family: Ubuntu-R;
+              font-size: 16px;
+              font-weight: normal;
+            }
+            .card-title {
+              color: #1a1e26;
+              font-size: 24px;
+              font-family: Ubuntu-B;
+              letter-spacing: -1px;
+            }
+            .card-text {
+              margin-top: 0;
+              margin-bottom: 24px;
+              font-family: Ubuntu-R;
+              color: #707070;
+              font-size: 16px;
+            }
+            a {
+              display: block;
+              outline: none;
+              border: none;
+              padding: 0;
+              text-transform: capitalize;
+              color: #013299;
+              svg {
+                margin-left: 10.7px;
+              }
             }
           }
         }
@@ -423,8 +433,7 @@ export default {
     }
   }
   .fourth-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 169.7px;
     position: relative;
     overflow: hidden;
     .svg_one {
@@ -432,10 +441,9 @@ export default {
       left: 1349.97px;
       top: 63px;
       @media (min-width: 1000px) and (max-width: 1400px) {
-           left: 920px;
+        left: 920px;
       }
     }
-
     .svg_two {
       position: absolute;
       left: -303.79px;
@@ -444,12 +452,11 @@ export default {
     .text {
       h2 {
         @include heading;
+        margin-bottom: 10px;
       }
     }
   }
   .fifth_section {
-    padding-top: 100px;
-    padding-bottom: 100px;
     .head {
       h2 {
         @include heading;

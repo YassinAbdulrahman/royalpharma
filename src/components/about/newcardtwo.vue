@@ -3,7 +3,7 @@
     <div class="box">
       <div class="inner-text">
         <img class="img-fluid" :src="product.src" alt="newcard img" />
-        <div>
+        <div class="text-card">
           <h2>+30</h2>
           <p>
             {{ product.text }}
@@ -36,13 +36,13 @@ export default {
   }
   .inner-text {
     width: 519px;
-    height: 166px;
     border-radius: 107px;
     background-image: linear-gradient(to left, #013299, #395faf);
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
     position: relative;
+    padding: 24.3px 0 10px 0;
     @media screen and (max-width: 768px) {
       width: 357px;
       height: 130px;
@@ -52,36 +52,41 @@ export default {
       width: 450px;
       height: 140px;
     }
-    h2 {
-      font-size: 30px;
-      text-align: start;
-      color: #edeff5;
-       font-family: Ubuntu-B;
-    }
-    p {
-      width: 303px;
-      height: 71px;
-      font-size: 1.25rem;
-      line-height: 24px;
-      color: var(--small-four-box-about);
-      font-family: Ubuntu-R;
-      text-align: left;
-      place-self: flex-end;
-      @media screen and (max-width: 768px) {
-        width: 212px;
-        font-size: 1rem;
+    .text-card {
+      width: 65%;
+      h2 {
+        font-size: 30px;
+        text-align: start;
+        color: #edeff5;
+        font-family: Ubuntu-B;
+      }
+      p {
+        width: 303px;
+        height: 71px;
+        font-size: 1.25rem;
+        line-height: 24px;
+        color: var(--small-four-box-about);
+        font-family: Ubuntu-R;
+        text-align: left;
+        place-self: flex-end;
+        @media screen and (max-width: 768px) {
+          width: 212px;
+          font-size: 1rem;
+        }
       }
     }
     img {
       position: absolute;
       left: -100px;
-      top: -85px;
+      top: 50%;
+      width: 267px;
+      transform: translateY(-50%);
       @media screen and (max-width: 768px) {
         width: 55%;
         left: -30px;
       }
       @media (min-width: 991px) and (max-width: 1366px) {
-        width: 60%;
+        width: 52%;
         left: -92px;
       }
     }

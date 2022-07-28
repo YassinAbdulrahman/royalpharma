@@ -191,7 +191,7 @@
     </div>
 
     <!-- Section three -->
-    <div class="fifth_section pt-5 pb-5">
+    <div class="fifth_section">
       <ourpeople-icon class="svg_one" />
       <ourpeople-icon class="svg_two" />
       <div class="container">
@@ -210,59 +210,65 @@
 
     <div class="section_six">
       <h2>2018 Business Heights</h2>
+
       <div class="first-div">
-        <div class="container">
-          <div
-            class="
-              section-six-content
-              d-flex
-              justify-content-around
-              align-items-center
-            "
-          >
-            <div class="one">
-              <p>
-                Royal Pharma products are marketed under 2 main divisions.
-                Pharmaceutical division that market and sells generic
-                pharmaceuticals, and Innova Pharma division that market and
-                sells Medical equipment, IV infusions and hospital products. The
-                total sales of Royal Pharma in both divisionsexceeded 20 US
-                Million Dollars in 2018
-              </p>
-            </div>
-            <div>
-              <h2>2018 Sales by division</h2>
-              <div class="inner-div">
-                <Doughnut />
-                <div class="right-precantage">
-                  <span>Pharmaceutical division</span>
-                  <span>Innova pharma division</span>
+        <div class="row">
+          <div class="col-2 first"></div>
+          <div class="col-8 second">
+            <div class="business-height-content">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-7">
+                  <p>
+                    Royal Pharma products are marketed under 2 main divisions.
+                    Pharmaceutical division that market and sells generic
+                    pharmaceuticals, and Innova Pharma division that market and
+                    sells Medical equipment, IV infusions and hospital products.
+                    The total sales of Royal Pharma in both divisionsexceeded 20
+                    US Million Dollars in 2022
+                  </p>
+                </div>
+                <div class="col-5 right-side">
+                  <h2>2022 Sales by division</h2>
+                  <Doughnut />
                 </div>
               </div>
             </div>
           </div>
+          <div class="col-2"></div>
         </div>
       </div>
       <div class="second-div">
-        <div
-          class="container d-flex justify-content-between align-items-center"
-        >
-          <div class="two">
-            <h2>Strong, Sustainable financial foundation</h2>
-            <div>
-              <bar-chart />
+        <div class="row g-0">
+          <div class="col-2"></div>
+          <div class="col-8 second">
+            <div class="business-height-content">
+              <div
+                class="
+                  row
+                  align-items-center
+                  justify-content-center
+                  flex-row-reverse
+                  g-0
+                "
+              >
+                <div class="col-7">
+                  <h2>Outstanding 2012 Financial Resuits</h2>
+                  <p>
+                    Total revenue in 2018 grew to $20.8million, a remarkable
+                    increase since 2012. Our growth continues to be driven by
+                    our internal investment in expanding our prod- ucts
+                    portfolio. Our pipeline today is among the strongest in the
+                    local market. local market.
+                  </p>
+                </div>
+                <div class="col-5 right-side">
+                  <h2>Strong, Sustainable financial foundation</h2>
+                  <BarChart/>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="one">
-            <p>
-              Royal Pharma products are marketed under 2 main divisions.
-              Pharmaceutical division that market and sells generic
-              pharmaceuticals, and Innova Pharma division that market and sells
-              Medical equipment, IV infusions and hospital products. The total
-              sales of Royal Pharma in both divisionsexceeded 20 US Million
-              Dollars in 2018
-            </p>
-          </div>
+          <div class="col-2 first"></div>
         </div>
       </div>
     </div>
@@ -270,7 +276,7 @@
     <!-- Section Seven -->
     <div class="section_seven">
       <div class="container">
-        <h2 v-scroll-reveal.reset="{ delay: 400 }">Our Infrastructures</h2>
+        <h2>Our Infrastructures</h2>
         <div class="box">
           <div class="srv-box">
             <span>6000</span>
@@ -303,8 +309,6 @@
         </div>
       </div>
     </div>
-
-    <app-footer />
   </div>
 </template>
 
@@ -312,14 +316,13 @@
 import Doughnut from "@/components/about/Doughnut.vue";
 import newcards from "../components/about/newcard.vue";
 import BarChart from "@/components/about/BarChart.vue";
-import AppFooter from "@/components/global/appFooter.vue";
+
 export default {
   name: "marketingview",
   components: {
     newcards,
     Doughnut,
     BarChart,
-    AppFooter,
   },
   data() {
     return {
@@ -353,8 +356,8 @@ export default {
 <style lang="scss" scoped>
 .fourth_section {
   font-family: Ubuntu-R;
-  padding-top: 100px;
-  margin-bottom: 100px;
+  padding-top: 140px;
+  padding-bottom: 126px;
   .text {
     h3 {
       margin-bottom: 24px;
@@ -416,8 +419,7 @@ export default {
   }
 }
 .fifth_section {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding-bottom: 191.4px;
   position: relative;
   overflow: hidden;
   .svg_one {
@@ -444,161 +446,148 @@ export default {
   }
 }
 .section_six {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  font-family: Ubuntu-R;
+  padding-bottom: 128px;
   > h2 {
     font-size: 3rem;
     color: var(--color_text_buttontwo);
   }
   .first-div {
-    height: 100%;
-    background-color: var(--boxes-in-about-section);
-    border-top-right-radius: 251px;
-    margin-top: 48px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 100%;
-    @media screen and (max-width: 768px) {
-      border-top-right-radius: 0;
+    .first {
+      background: #e2f3ff;
+      height: 440px;
     }
-    .container {
-      .section-six-content {
-        column-gap: 10px;
-        @media screen and (max-width: 768px) {
-          flex-direction: column;
+    .second {
+      background: #e2f3ff;
+      height: 440px;
+      border-top-right-radius: 251px;
+      display: grid;
+      place-content: center;
+      .business-height-content {
+        p {
+          width: 674px;
+          font-size: 24px;
+          text-align: left;
+          line-height: 38.4px;
+          color: #1a1e26;
         }
-        .one {
-          p {
-            width: 674px;
-            height: 312px;
-            text-align: left;
-            font-size: 1.5rem;
-            line-height: 38.4px;
-            color: #1a1e26;
-            margin: 0;
-            @media screen and (max-width: 768px) {
-              width: 100%;
-              height: 100%;
-              text-align: center;
-            }
-          }
-        }
-        .two {
+        .right-side {
           h2 {
-            overflow: hidden;
-            margin: 0 0 0 5px;
-            text-align: left;
-            @media screen and (max-width: 768px) {
-              margin-top: 40px;
-            }
-            @media (max-width: 991px) {
-              text-align: center;
-            }
-          }
-          .inner-div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 0 20px;
-            margin-top: 26px;
-            @media screen and (max-width: 768px) {
-              flex-direction: column;
-            }
-            .right-precantage {
-              margin-top: 50px;
-              span {
-                display: block;
-                font-size: 18px;
-                color: #1a1e26;
-                position: relative;
-                padding-left: 20px;
-              }
-              span::before {
-                content: "";
-                position: absolute;
-                width: 20px;
-                height: 20px;
-                left: 0;
-                top: 5px;
-                background-color: red;
-                padding-right: 10px;
-              }
-            }
+            font-family: Ubuntu-B;
+            font-size: 30px;
+            color: #013299;
           }
         }
       }
     }
   }
   .second-div {
-    margin-left: 0;
-    height: 100%;
-    background-color: var(--color_text_buttontwo);
-    border-bottom-left-radius: 251px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    color: var(--color-text-navlink);
-    @media screen and (max-width: 768px) {
-      border-bottom-left-radius: 0px;
+    .first {
+      background: #013299;
+      height: 502px;
     }
-    .container {
-      gap: 20px;
-      @media screen and (max-width: 768px) {
-        flex-direction: column;
-      }
-    }
-    .one {
-      width: 674px;
-      max-width: 100%;
-      p {
-        width: 100%;
-        height: 100%;
-        text-align: left;
-        font-size: 1.5rem;
-        line-height: 38.4px;
-        @media screen and (max-width: 768px) {
-          text-align: center;
+    .second {
+      background: #013299;
+      height: 502px;
+      border-bottom-left-radius: 251px;
+      display: grid;
+      place-content: center;
+      .business-height-content {
+        h2 {
+          font-family: Ubuntu-B;
+          font-size: 30px;
+          color: #f4f7fc;
+          text-align: left;
         }
-      }
-    }
-    .two {
-      h2 {
-        margin: 0 0 0 5px;
-        text-align: left;
-        font-size: 1.875rem;
-        width: 100%;
-      }
-      .inner-div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 26px;
-        span {
-          display: block;
-          font-size: 18px;
-          color: #1a1e26;
-          position: relative;
-          padding-left: 20px;
+        p {
+          width: 674px;
+          max-width: 100%;
+          font-size: 24px;
+          text-align: left;
+          line-height: 38.4px;
+          color: #f4f7fc;
         }
-        span::before {
-          content: "";
-          position: absolute;
-          width: 20px;
-          height: 20px;
-          left: 0;
-          top: 5px;
-          background-color: red;
-          padding-right: 10px;
+        .right-side {
+          h2 {
+            font-family: Ubuntu-B;
+            font-size: 30px;
+            color: #f4f7fc;
+            line-height: 35px;
+          }
         }
       }
     }
   }
+  // .second-div {
+  //   margin-left: 0;
+  //   height: 100%;
+  //   background-color: var(--color_text_buttontwo);
+  //   border-bottom-left-radius: 251px;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   padding-top: 50px;
+  //   padding-bottom: 50px;
+  //   color: var(--color-text-navlink);
+  //   @media screen and (max-width: 768px) {
+  //     border-bottom-left-radius: 0px;
+  //   }
+  //   .container {
+  //     gap: 20px;
+  //     @media screen and (max-width: 768px) {
+  //       flex-direction: column;
+  //     }
+  //   }
+  //   .one {
+  //     width: 674px;
+  //     max-width: 100%;
+  //     p {
+  //       width: 100%;
+  //       height: 100%;
+  //       text-align: left;
+  //       font-size: 1.5rem;
+  //       line-height: 38.4px;
+  //       @media screen and (max-width: 768px) {
+  //         text-align: center;
+  //       }
+  //     }
+  //   }
+  //   .two {
+  //     h2 {
+  //       margin: 0 0 0 5px;
+  //       text-align: left;
+  //       font-size: 1.875rem;
+  //       width: 100%;
+  //     }
+  //     .inner-div {
+  //       display: flex;
+  //       justify-content: center;
+  //       align-items: center;
+  //       margin-top: 26px;
+  //       span {
+  //         display: block;
+  //         font-size: 18px;
+  //         color: #1a1e26;
+  //         position: relative;
+  //         padding-left: 20px;
+  //       }
+  //       span::before {
+  //         content: "";
+  //         position: absolute;
+  //         width: 20px;
+  //         height: 20px;
+  //         left: 0;
+  //         top: 5px;
+  //         background-color: red;
+  //         padding-right: 10px;
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 .section_seven {
-  padding: 100px 0 100px 0;
+  padding-bottom: 57px;
   @media (max-width: 991px) {
     display: none;
   }

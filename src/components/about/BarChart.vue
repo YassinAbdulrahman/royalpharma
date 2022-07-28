@@ -49,8 +49,8 @@ export default {
       default: "label",
     },
     width: {
-      type: Number,
-      default: 300,
+      type: String,
+      width:'411',
     },
     height: {
       type: Number,
@@ -62,7 +62,9 @@ export default {
     },
     styles: {
       type: Object,
-      default: () => {},
+      default: () => {
+        width:'411px';
+      },
     },
     plugins: {
       type: Array,
@@ -82,11 +84,19 @@ export default {
           },
         ],
       },
+      
       chartOptions: {
         responsive: true,
         maintainAspectRatio: false,
+        
       },
     };
   },
 };
 </script>
+
+<style lang="scss" scoped>
+#bar-chart{
+  width: 411px;
+}
+</style>

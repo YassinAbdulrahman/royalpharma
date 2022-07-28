@@ -96,7 +96,7 @@
                 alt="Card image cap"
               />
               <div class="card-body text-start">
-                <h3><span class="badge bg-secondary">20 jan 2022</span></h3>
+                <span class="badge bg-secondary">20 jan 2022</span>
                 <h5 class="card-title">Get to know the sinovac vaccine</h5>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -231,16 +231,13 @@
         </div>
       </div>
     </div>
-
-    <app-footer />
   </div>
 </template>
 
 <script>
-import appFooter from "@/components/global/appFooter.vue";
 import cards from "@/components/news/card.vue";
 export default {
-  components: { appFooter, cards },
+  components: { cards },
   name: "NewsView",
   data() {
     return {
@@ -278,8 +275,8 @@ export default {
 <style lang="scss" scoped>
 .news-content {
   font-family: Ubuntu-R;
-  padding-top: 120px;
-  margin-bottom: 40px;
+  padding-top: 144px;
+  padding-bottom: 40px;
 }
 .first_col {
   .big-card {
@@ -342,19 +339,19 @@ export default {
     box-shadow: 0 3px 6px rgb(0, 0, 0, 16%);
     padding: 16px;
     border-radius: 20px;
-    h3 {
-      margin-bottom: 12px;
-      span {
-        font-size: 18px;
-        font-weight: normal;
-        background-color: #e2f3ff !important;
-        color: #1d8d99;
-      }
+    margin-bottom: 12px;
+    span:first-child {
+      font-size: 18px;
+      font-weight: normal;
+      background-color: #e2f3ff !important;
+      color: #1d8d99;
+      border-radius: 10px;
+      padding: 11px 8px;
     }
     h5 {
       font-size: 1.4rem;
-      font-weight: bold;
       line-height: 35px;
+      font-family: Ubuntu-B;
     }
     p {
       line-height: 22px;
@@ -368,7 +365,6 @@ export default {
       a {
         text-decoration: none;
         color: var(--color_text_buttontwo);
-        
       }
       svg {
         font-weight: 600;
@@ -380,7 +376,7 @@ export default {
   }
 }
 .second-row {
-  margin-top: 20px;
+  margin-top: 24px;
   row-gap: 30px;
 }
 .third-col {
@@ -389,19 +385,18 @@ export default {
     box-shadow: 0 3px 6px rgb(0, 0, 0, 16%);
     padding: 16px;
     border-radius: 20px;
-  
-      margin-bottom: 12px;
-      span {
-        font-size: 18px;
-        font-weight: normal;
-        background-color: #e2f3ff !important;
-        color: #1d8d99;
-        border-radius: 10px;
-        padding: 11 8px;
-      }
+    margin-bottom: 12px;
+    span {
+      font-size: 18px;
+      font-weight: normal;
+      background-color: #e2f3ff !important;
+      color: #1d8d99;
+      border-radius: 10px;
+      padding: 11px 8px;
+    }
     h5 {
       font-size: 1.4rem;
-      font-weight: bold;
+      font-family: Ubuntu-B;
       line-height: 35px;
     }
     p {

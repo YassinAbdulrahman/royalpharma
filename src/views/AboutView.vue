@@ -43,68 +43,69 @@
         </div>
       </div>
       <div class="sub-section">
-        <div class="container">
-          <div class="inner-sub-section">
-            <div class="row justify-content-center align-items-center">
-              <div class="col-lg-6">
-                <div class="first-col">
-                  <h1>Managing Director Message</h1>
-                  <div class="scroll-pargrah">
-                    <p>
-                      Starting our transformation toward a new and reformed
-                      Royal PharmaAs we celebrate our 13th anniversary in 2019,
-                      we are truly grateful for all of our employees, business
-                      partners and customers for their continuous support. Since
-                      the company was established in 2006, Royal Pharma has gone
-                      through several growth and development stages until it
-                      reached its current status as a major supplier of
-                      pharmaceuticals and medical devices in Yemen.The local
-                      business environment has experienced drastic changes in
-                      the last The local business environment has experienced
-                      drastic changes in the last few years. The exit of major
-                      local suppliers of pharmaceuticals and medical devices
-                      from the market and the entry of more competitive new ones
-                      have re-sulted in opportunities as well as threats.
-                      Furthermore, the deteriorating so-cio-economic status and
-                      the changing geopolitical landscape in Yemen makes the
-                      survival of existing business a great challenge. With
-                      facing such challenges, we at Royal Pharma are required to
-                      achieve a dramatic reform and a major shift from a
-                      corporate that largely depends on distributing highly
-                      competitive and low priced pharmaceuticals to an
-                      enter-prise that provides specialty products and medical
-                      solutions. This is while keep-ing focused on the existing
-                      business model and philosophy. By encouraging our staff
-                      members to proactively identify perpetually chang-ing
-                      market needs and discover new opportunities, Royal Pharma
-                      will be much better equipped to double its turnover via
-                      expanding the range of product portfolio and proposing an
-                      appropriate medical solutions. Our goal is to drive growth
-                      and expand our market presence in key therapeu- tic
-                      categories, particularly within prescription
-                      pharmaceutical business and lifesaving therapeutic
-                      solutions. Furthermore but not less important, we shall
-                      im-prove our compliance to the international regulatory
-                      standards pertaining to storage and distribution of
-                      pharmaceutical and medical devices products. We will also
-                      look to further expand and diversify our portfolio and
-                      optimize the potential of our local commercial network.We
-                      want to be judged by our customers on our adherence to our
-                      business and scientific values that constitute the core of
-                      our philosophy. Thanks a lot for our customers and
-                      employee for the trust they place on Royal Pharma, we will
-                      continue to do all we can to live up to this trust.
-                    </p>
-                  </div>
+        <div class="row g-0">
+          <div class="col-2 first"></div>
+          <div class="col-8 second">
+            <div class="row">
+              <div class="first-col col-sm-12 col-md-6 mb-sm-5 py-md-5">
+                <h2>Managing Director Message</h2>
+                <div class="scroll-pargrah">
+                  <p>
+                    Starting our transformation toward a new and reformed Royal
+                    PharmaAs we celebrate our 13th anniversary in 2019, we are
+                    truly grateful for all of our employees, business partners
+                    and customers for their continuous support. Since the
+                    company was established in 2006, Royal Pharma has gone
+                    through several growth and development stages until it
+                    reached its current status as a major supplier of
+                    pharmaceuticals and medical devices in Yemen.The local
+                    business environment has experienced drastic changes in the
+                    last The local business environment has experienced drastic
+                    changes in the last few years. The exit of major local
+                    suppliers of pharmaceuticals and medical devices from the
+                    market and the entry of more competitive new ones have
+                    re-sulted in opportunities as well as threats. Furthermore,
+                    the deteriorating so-cio-economic status and the changing
+                    geopolitical landscape in Yemen makes the survival of
+                    existing business a great challenge. With facing such
+                    challenges, we at Royal Pharma are required to achieve a
+                    dramatic reform and a major shift from a corporate that
+                    largely depends on distributing highly competitive and low
+                    priced pharmaceuticals to an enter-prise that provides
+                    specialty products and medical solutions. This is while
+                    keep-ing focused on the existing business model and
+                    philosophy. By encouraging our staff members to proactively
+                    identify perpetually chang-ing market needs and discover new
+                    opportunities, Royal Pharma will be much better equipped to
+                    double its turnover via expanding the range of product
+                    portfolio and proposing an appropriate medical solutions.
+                    Our goal is to drive growth and expand our market presence
+                    in key therapeu- tic categories, particularly within
+                    prescription pharmaceutical business and lifesaving
+                    therapeutic solutions. Furthermore but not less important,
+                    we shall im-prove our compliance to the international
+                    regulatory standards pertaining to storage and distribution
+                    of pharmaceutical and medical devices products. We will also
+                    look to further expand and diversify our portfolio and
+                    optimize the potential of our local commercial network.We
+                    want to be judged by our customers on our adherence to our
+                    business and scientific values that constitute the core of
+                    our philosophy. Thanks a lot for our customers and employee
+                    for the trust they place on Royal Pharma, we will continue
+                    to do all we can to live up to this trust.
+                  </p>
                 </div>
               </div>
-              <div class="col-lg-6">
-                <div class="second-col">
-                  <img src="../assets/about/Group 1429.png" alt="photo" />
-                </div>
+              <div class="second-col col-md-6 col-sm-12">
+                <img
+                  class="img-fluid"
+                  src="../assets/New_Card_Home/aboutphoto.png"
+                  alt="doctor"
+                />
               </div>
             </div>
           </div>
+          <div class="col-2"></div>
         </div>
       </div>
     </div>
@@ -114,7 +115,7 @@
       <div class="container">
         <h2>Our Principles And Values</h2>
         <div class="sub-last-section">
-          <div class="row align-items-center">
+          <div class="row align-items-center justify-content-between g-0">
             <div class="col-lg-6">
               <img
                 src="../assets/GGGG/Mask Group 47.png"
@@ -122,7 +123,7 @@
                 alt=""
               />
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-5">
               <div class="principles-content">
                 <ul class="tabs-choose">
                   <li
@@ -198,20 +199,15 @@
         </div>
       </div>
     </div>
-
-    <!-- Section eight -->
-    <app-footer />
   </div>
 </template>
 
 <script>
-import appFooter from "@/components/global/appFooter.vue";
 import carouselabout from "@/components/global/carouselabout.vue";
 
 export default {
   name: "aboutview",
   components: {
-    appFooter,
     carouselabout,
   },
   data() {
@@ -219,6 +215,18 @@ export default {
       activeTab: "1",
     };
   },
+  mission: [
+    {
+      id: 1,
+      txt: "Governmental Hospitals, including the top 10 major hospitals in Yemen",
+      src: require("../assets/New_Card_Home/card_our_people.png"),
+    },
+    {
+      id: 2,
+      txt: "Governmental Hospitals, including the top 10 major hospitals in Yemen",
+      src: require("../assets/New_Card_Home/card_our_people.png"),
+    },
+  ],
 };
 </script>
 
@@ -228,11 +236,11 @@ export default {
     font-size: 3rem;
     color: var(--color_text_buttontwo);
     font-family: Ubuntu-M;
-    margin-bottom: 45px;
+    margin-bottom: 48px;
   }
   .first-block {
-    padding-top: 60px;
-    padding-bottom: 70px;
+    margin-top: 144px;
+    padding-bottom: 126px;
     @media (max-width: 991px) {
       padding-top: 10px;
     }
@@ -304,59 +312,89 @@ export default {
       margin-bottom: 128px;
     }
     .sub-section {
-      background-image: linear-gradient(to bottom, #013299, #395faf);
-      height: 500px;
-      .inner-sub-section {
-        .first-col {
-          text-align: left;
-          h1 {
-            color: var(--color-text-navlink);
-            font-size: 48px;
-            font-family: Ubuntu-M;
-            line-height: 60px;
-            width: 427px;
-            margin: 0;
-            margin-bottom: 24px;
-          }
-          .scroll-pargrah {
-            width: 566px;
-            height: 270px;
-            overflow-x: hidden;
-            overflow-y: scroll;
-            max-width: 100%;
-            p {
+      position: relative;
+      .row {
+        .first {
+          background-color: #013299;
+          height: 529px;
+        }
+        .second {
+          background-color: #013299;
+          height: 529px;
+          border-top-right-radius: 346px;
+          border-bottom-right-radius: 346px;
+          .first-col {
+            text-align: left;
+            position: relative;
+            &::after {
+              content: "";
+              filter: blur(15px);
+              height: 70px;
+              left: 0;
+              position: absolute;
+              right: 0;
+              bottom: 0;
               width: 100%;
-              height: 256px;
-              color: var(--color-text-navlink);
-              font-size: 1.5rem;
-              line-height: 32px;
-              padding-right: 20px;
+              background: #013299;
+            }
+            @media (max-width: 768px) {
+              padding-top: 80px;
+              padding-bottom: 80px;
+            }
+            h2 {
+              color: #f4f7fc;
+              font-family: Ubuntu-M;
+              margin: 0;
+              margin-bottom: 31px;
+              line-height: 55px;
+              font-size: 3rem;
+              width: 427px;
+              @media (max-width: 768px) {
+                text-align: center;
+              }
+            }
+            .scroll-pargrah {
+              width: 566px;
+              height: 270px;
+              overflow-x: hidden;
+              overflow-y: scroll;
+              max-width: 100%;
+              p {
+                width: 100%;
+                height: 256px;
+                color: #f4f7fc;
+                font-size: 1.5rem;
+                line-height: 29px;
+              }
+            }
+            ::-webkit-scrollbar {
+              width: 5px;
+            }
+            ::-webkit-scrollbar-track {
+              background-color: var(--webkit-scrollbar-track);
+              border-radius: 3px;
+            }
+            ::-webkit-scrollbar-thumb {
+              background: var(--webkit-scrollbar-thumb);
+              border-radius: 3px;
             }
           }
-          ::-webkit-scrollbar {
-            width: 5px;
-          }
-          ::-webkit-scrollbar-track {
-            background-color: var(--webkit-scrollbar-track);
-            border-radius: 3px;
-          }
-          ::-webkit-scrollbar-thumb {
-            background: var(--webkit-scrollbar-thumb);
-            border-radius: 3px;
-          }
-        }
-        .second-col {
-          width: 80%;
-          img {
-            max-width: 100%;
+          .second-col {
+            img {
+              position: absolute;
+              width: 37%;
+              left: 50%;
+              top: 50%;
+              transform: translate(-2%, -50%);
+            }
           }
         }
       }
     }
   }
   .last-section {
-    padding-top: 100px;
-    padding-bottom: 198px;
+    padding-top: 125px;
+    padding-bottom: 127px;
     h2 {
       @include heading;
     }
@@ -371,13 +409,12 @@ export default {
           position: relative;
           padding: 0 0 20px 0;
           text-align: start;
-          padding-left: 14px;
           li {
             display: inline-block;
             font-size: 20px;
             color: #013299;
             &:not(:last-child) {
-              padding-right: 48px;
+              padding-right: 30px;
             }
             &.active {
               color: #013299;
@@ -389,8 +426,8 @@ export default {
                 bottom: 0;
                 background: #013299;
                 height: 3px;
-                width: 62px;
-                left: 27%;
+                width: 65px;
+                left: 32%;
                 transform: translateX(-50%);
                 bottom: -20px;
                 @media (max-width: 991px) {
@@ -417,8 +454,8 @@ export default {
                 bottom: 0;
                 background: #013299;
                 height: 3px;
-                width: 80px;
-                left: 29%;
+                width: 90px;
+                left: 40%;
                 transform: translateX(-50%);
                 bottom: -20px;
                 @media (max-width: 991px) {
@@ -431,8 +468,8 @@ export default {
                 bottom: 0;
                 background: #013299;
                 height: 3px;
-                width: 78px;
-                left: 48%;
+                width: 100px;
+                left: 50%;
                 transform: translateX(-50%);
                 bottom: -20px;
                 @media (max-width: 991px) {
@@ -446,18 +483,20 @@ export default {
           content: "";
           position: absolute;
           height: 2px;
-          width: 78%;
+          width: 100%;
           background: #ddd;
           bottom: 0;
           @media (min-width: 991px) and (max-width: 1366px) {
-            width: 92%;
+            width: 98%;
+          }
+          @media (min-width: 1400px) {
+            width: 85.5%;
           }
         }
         .tabs-content {
           text-align: left;
           width: 100%;
           margin: auto;
-          padding-left: 14px;
           margin-top: 43.5px;
 
           h4 {

@@ -295,18 +295,11 @@
         </div>
       </div>
     </div>
-    <app-footer />
   </div>
 </template>
-
-
 <script>
-import appFooter from "@/components/global/appFooter.vue";
 export default {
   name: "Subnewsviews",
-  components: {
-    appFooter,
-  },
 };
 </script>
 

@@ -1,36 +1,38 @@
 
 <template>
-  <swiper class="swiper" :options="swiperOption">
-    <swiper-slide>
-      <div class="first_div"><companylogo-icon/></div>
-    </swiper-slide>
-    <swiper-slide>
-      <div class="first_div"><companylogo-icon/></div>
-    </swiper-slide>
-    <swiper-slide>
-      <div class="first_div"><companylogo-icon/></div>
-    </swiper-slide>
-    <swiper-slide>
-      <div class="first_div"><companylogo-icon/></div>
-    </swiper-slide>
-    <swiper-slide>
-      <div class="first_div"><companylogo-icon/></div>
-    </swiper-slide>
-    <swiper-slide>
-      <div class="first_div"><companylogo-icon/></div>
-    </swiper-slide>
-    <swiper-slide>
-      <div class="first_div"><companylogo-icon/></div>
-    </swiper-slide>
-    <swiper-slide>
-      <div class="first_div"><companylogo-icon/></div>
-    </swiper-slide>
-    <swiper-slide>
-      <div class="first_div">silde 1</div>
-    </swiper-slide>
+  <div class="position-relative">
+    <swiper class="swiper" :options="swiperOption">
+      <swiper-slide>
+        <div class="first_div"><companylogo-icon /></div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="first_div"><companylogo-icon /></div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="first_div"><companylogo-icon /></div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="first_div"><companylogo-icon /></div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="first_div"><companylogo-icon /></div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="first_div"><companylogo-icon /></div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="first_div"><companylogo-icon /></div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="first_div"><companylogo-icon /></div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="first_div">silde 1</div>
+      </swiper-slide>
+    </swiper>
     <div class="swiper-button-prev" slot="button-prev"></div>
     <div class="swiper-button-next" slot="button-next"></div>
-  </swiper>
+  </div>
 </template>
 
 <script>
@@ -67,7 +69,7 @@ export default {
   height: 180px;
   background-color: #fafafa;
 }
-.swiper-button-next ,
+.swiper-button-next,
 .swiper-button-prev {
   width: 36px;
   height: 36px;
@@ -77,6 +79,13 @@ export default {
 .swiper-button-prev:after,
 .swiper-button-next:after {
   font-size: 16px;
-  color: #FFF;
+  color: #fff;
+}
+.swiper-button-next {
+  right: -44px;
+  
+}
+.swiper-button-prev {
+  left: -44px;
 }
 </style>
