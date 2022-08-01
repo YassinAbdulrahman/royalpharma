@@ -173,6 +173,7 @@ export default {
   position: relative;
   font-family: Ubuntu-R;
   margin-top: 71px;
+  overflow: hidden;
   &::before {
     content: "";
     position: absolute;

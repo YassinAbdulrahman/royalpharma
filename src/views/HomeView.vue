@@ -3,7 +3,7 @@
     <div class="first-section">
       <app-headertwo />
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center pad-to-row">
           <div class="text-md-start col-md-6">
             <div class="text-div">
               <h1>A True Devotion to</h1>
@@ -17,7 +17,7 @@
               <button>Read More</button>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 two-second">
             <img
               class="img-fluid"
               src="../assets/GGGG/royalpharmara.png"
@@ -67,7 +67,7 @@
       <div class="container">
         <h2>latest News</h2>
         <div class="subsection">
-          <div class="row">
+          <div class="row gy-3">
             <div class="col-md-4">
               <div class="card">
                 <img
@@ -228,8 +228,16 @@ export default {
     background-size: cover;
     object-fit: contain;
     background-position-y: bottom;
+    .pad-to-row {
+      padding-top: 130px;
+      @media (max-width: 991px) {
+        padding-top: 60px;
+      }
+    }
     @media only screen and (max-width: 991px) {
-      height: auto;
+      height: 1100px;
+      background-image: none;
+      background-color: #ddd;
     }
     @media (min-width: 1240px) and (max-width: 1518px) {
       .container {
@@ -237,6 +245,9 @@ export default {
       }
     }
     .text-div {
+      @media (max-width: 991px) {
+        padding-top: 55px;
+      }
       h1 {
         font-size: 60px;
         font-family: Ubuntu-B;
@@ -244,6 +255,9 @@ export default {
         margin: 0;
         @media (min-width: 1240px) and (max-width: 1518px) {
           font-size: 52px;
+        }
+        @media (max-width: 991px) {
+          font-size: 50px;
         }
       }
       h4 {
@@ -270,6 +284,9 @@ export default {
     .left-btn {
       width: 536px;
       max-width: 100%;
+      @media (max-width: 911px) {
+        justify-content: center !important;
+      }
       button {
         border: none;
         color: #edeff5;
@@ -280,13 +297,13 @@ export default {
         font-size: 1.5rem;
         margin-top: 84px;
       }
-      @media (max-width: 768px) {
-        .left-btn {
-          justify-content: center !important;
-        }
+    }
+    .two-second {
+      padding-top: 20px;
+      img {
+        width: 80%;
       }
     }
-
     a {
       width: 40px;
       height: 56.06px;
@@ -297,6 +314,9 @@ export default {
       transform: translateX(-50%);
       @media (min-width: 1500px) {
         bottom: 10%;
+      }
+      @media (max-width: 991px) {
+        bottom: -34%;
       }
       .scroll {
         display: flex;
@@ -364,10 +384,9 @@ export default {
     .first-row {
       --bs-gutter-x: 1.938rem !important;
       --bs-gutter-y: 1.938rem !important;
-      .col-lg-4{
+      .col-lg-4 {
         z-index: 10;
       }
-    
     }
     .second-row {
       margin-top: 62px;

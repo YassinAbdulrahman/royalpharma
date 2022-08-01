@@ -210,14 +210,13 @@
 
     <div class="section_six">
       <h2>2018 Business Heights</h2>
-
       <div class="first-div">
         <div class="row">
-          <div class="col-2 first"></div>
-          <div class="col-8 second">
+          <div class="col-lg-2 first"></div>
+          <div class="col-lg-8 col-sm-12 second">
             <div class="business-height-content">
               <div class="row align-items-center justify-content-center">
-                <div class="col-7">
+                <div class="col-sm-12 col-lg-7">
                   <p>
                     Royal Pharma products are marketed under 2 main divisions.
                     Pharmaceutical division that market and sells generic
@@ -227,31 +226,23 @@
                     US Million Dollars in 2022
                   </p>
                 </div>
-                <div class="col-5 right-side">
+                <div class="col-sm-12 col-lg-5 right-side">
                   <h2>2022 Sales by division</h2>
                   <Doughnut />
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-2"></div>
+          <div class="col-lg-2"></div>
         </div>
       </div>
       <div class="second-div">
         <div class="row g-0">
-          <div class="col-2"></div>
-          <div class="col-8 second">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8 col-sm-12 second">
             <div class="business-height-content">
-              <div
-                class="
-                  row
-                  align-items-center
-                  justify-content-center
-                  flex-row-reverse
-                  g-0
-                "
-              >
-                <div class="col-7">
+              <div class="row justify-content-center flex-row-reverse">
+                <div class="col-sm-12 col-lg-7">
                   <h2>Outstanding 2012 Financial Resuits</h2>
                   <p>
                     Total revenue in 2018 grew to $20.8million, a remarkable
@@ -261,14 +252,15 @@
                     local market. local market.
                   </p>
                 </div>
-                <div class="col-5 right-side">
+                <div class="col-sm-12 col-lg-5 right-side">
                   <h2>Strong, Sustainable financial foundation</h2>
-                  <BarChart/>
+
+                  <BarChart />
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-2 first"></div>
+          <div class="col-lg-2 first"></div>
         </div>
       </div>
     </div>
@@ -448,14 +440,22 @@ export default {
 .section_six {
   font-family: Ubuntu-R;
   padding-bottom: 128px;
+  overflow: hidden;
   > h2 {
+    margin-bottom: 48px;
     font-size: 3rem;
-    color: var(--color_text_buttontwo);
+    color: var(--heading-about-section);
+    font-family: Ubuntu-M;
   }
   .first-div {
     .first {
       background: #e2f3ff;
       height: 440px;
+    }
+    @media (max-width: 991px) {
+      .col-lg-2 {
+        display: none;
+      }
     }
     .second {
       background: #e2f3ff;
@@ -463,6 +463,11 @@ export default {
       border-top-right-radius: 251px;
       display: grid;
       place-content: center;
+      @media (max-width: 991px) {
+        height: auto;
+        border-top-right-radius: 0;
+        display: block;
+      }
       .business-height-content {
         p {
           width: 674px;
@@ -470,6 +475,13 @@ export default {
           text-align: left;
           line-height: 38.4px;
           color: #1a1e26;
+          max-width: 100%;
+          @media (min-width: 991px) and (max-width: 1366px) {
+            font-size: 22px;
+          }
+          @media (max-width: 991px) {
+            padding: 20px;
+          }
         }
         .right-side {
           h2 {
@@ -486,26 +498,51 @@ export default {
       background: #013299;
       height: 502px;
     }
+    @media (max-width: 991px) {
+      .col-lg-2 {
+        display: none;
+      }
+    } 
     .second {
       background: #013299;
       height: 502px;
       border-bottom-left-radius: 251px;
       display: grid;
       place-content: center;
+      @media (max-width: 991px) {
+        height: auto;
+        border-bottom-left-radius: 0;
+        display: block;
+      }
       .business-height-content {
+        @media (max-width: 991px) {
+          padding: 20px;
+        }
         h2 {
           font-family: Ubuntu-B;
           font-size: 30px;
           color: #f4f7fc;
           text-align: left;
+          @media (min-width: 992px) and (max-width: 1366px) {
+            font-size: 26px;
+          }
         }
+
         p {
           width: 674px;
           max-width: 100%;
           font-size: 24px;
           text-align: left;
           line-height: 38.4px;
+          max-width: 100%;
           color: #f4f7fc;
+          @media (min-width: 992px) and (max-width: 1366px) {
+            font-size: 22px;
+            padding: 20px;
+          }
+          @media (max-width: 991px) {
+            padding: 20px;
+          }
         }
         .right-side {
           h2 {
@@ -513,6 +550,9 @@ export default {
             font-size: 30px;
             color: #f4f7fc;
             line-height: 35px;
+            @media (min-width: 992px) and (max-width: 1366px) {
+              font-size: 26px;
+            }
           }
         }
       }

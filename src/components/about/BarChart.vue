@@ -1,15 +1,17 @@
 <template>
-  <Bar
-    :chart-options="chartOptions"
-    :chart-data="chartData"
-    :chart-id="chartId"
-    :dataset-id-key="datasetIdKey"
-    :plugins="plugins"
-    :css-classes="cssClasses"
-    :styles="styles"
-    :width="width"
-    :height="height"
-  />
+  <div style="width: 300px !important; margin: auto">
+    <Bar
+      :chart-options="chartOptions"
+      :chart-data="chartData"
+      :chart-id="chartId"
+      :dataset-id-key="datasetIdKey"
+      :plugins="plugins"
+      :css-classes="cssClasses"
+      :styles="styles"
+      :width="width"
+      :height="height"
+    />
+  </div>
 </template>
 
 <script>
@@ -24,6 +26,7 @@ import {
   CategoryScale,
   LinearScale,
 } from "chart.js";
+import { read } from "@popperjs/core";
 
 ChartJS.register(
   Title,
@@ -49,12 +52,12 @@ export default {
       default: "label",
     },
     width: {
-      type: String,
-      width:'411',
+      type: Number,
+      default: 311,
     },
     height: {
       type: Number,
-      default: 300,
+      default: 246,
     },
     cssClasses: {
       default: "",
@@ -62,9 +65,7 @@ export default {
     },
     styles: {
       type: Object,
-      default: () => {
-        width:'411px';
-      },
+      default: () => {},
     },
     plugins: {
       type: Array,
@@ -78,17 +79,19 @@ export default {
 
         datasets: [
           {
-            label: "",
+            label: "Seles in Million USF",
+            color: "#FFF",
             backgroundColor: "#EB0E0E",
+            borderColor: "rgba(255, 255, 255, 1)",
             data: [10, 30, 50, 80],
           },
         ],
       },
-      
+
       chartOptions: {
         responsive: true,
         maintainAspectRatio: false,
-        
+        color: "#FFF",
       },
     };
   },
@@ -96,7 +99,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#bar-chart{
-  width: 411px;
+.Barchartone {
+  width: 200px;
 }
 </style>

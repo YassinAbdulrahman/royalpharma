@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './assets/index'
 import { Bar } from 'vue-chartjs/legacy'
 import VueGeolocation from 'vue-browser-geolocation'
-
+import 'normalize.css'
 import VueScrollReveal from 'vue-scroll-reveal'
 import AOS from 'aos'
 import 'aos/dist/aos.css'

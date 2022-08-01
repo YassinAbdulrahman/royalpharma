@@ -63,6 +63,7 @@ export default {
       color: var(--small-four-box-about);
       font-family: Ubuntu-R;
       text-align: left;
+      margin: 0;
       place-self: flex-end;
       @media screen and (max-width: 768px) {
         width: 212px;

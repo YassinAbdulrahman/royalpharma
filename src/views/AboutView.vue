@@ -1,8 +1,8 @@
 <template>
   <div class="about">
-    <div class="first-block">
+    <div class="first-blocks">
       <div class="container">
-        <div class="row align-items-center first-block gy-4">
+        <div class="row align-items-center first-block">
           <div class="first-col col-sm-12 col-md-6 mb-sm-5">
             <h2>About us</h2>
             <h1>Who We Are</h1>
@@ -45,7 +45,7 @@
       <div class="sub-section">
         <div class="row g-0">
           <div class="col-2 first"></div>
-          <div class="col-8 second">
+          <div class="col-sm-12 col-md-8 second">
             <div class="row">
               <div class="first-col col-sm-12 col-md-6 mb-sm-5 py-md-5">
                 <h2>Managing Director Message</h2>
@@ -238,11 +238,14 @@ export default {
     font-family: Ubuntu-M;
     margin-bottom: 48px;
   }
-  .first-block {
-    margin-top: 144px;
+  .first-blocks {
+    padding-top: 144px;
     padding-bottom: 126px;
     @media (max-width: 991px) {
       padding-top: 10px;
+    }
+    @media (min-width: 991px) and (max-width: 1366px) {
+      padding-top: 100px;
     }
     .first-col {
       text-align: left;
@@ -316,13 +319,24 @@ export default {
       .row {
         .first {
           background-color: #013299;
-          height: 529px;
+          height: 510px;
         }
-        .second {
+        @media (max-width: 991px) {
+          .col-2 {
+            display: none;
+          }
+        }
+        .second {   
           background-color: #013299;
-          height: 529px;
+          height: 510px;
           border-top-right-radius: 346px;
           border-bottom-right-radius: 346px;
+          @media (max-width: 991px) {
+            height: auto;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            padding: 0 20px;
+          }
           .first-col {
             text-align: left;
             position: relative;
@@ -349,8 +363,10 @@ export default {
               line-height: 55px;
               font-size: 3rem;
               width: 427px;
+              max-width: 100%;
               @media (max-width: 768px) {
                 text-align: center;
+                font-size: 38px;
               }
             }
             .scroll-pargrah {
@@ -382,10 +398,22 @@ export default {
           .second-col {
             img {
               position: absolute;
-              width: 37%;
+              width: 44%;
               left: 50%;
               top: 50%;
-              transform: translate(-2%, -50%);
+              transform: translate(5%, -50%);
+              @media (min-width: 991px) and (max-width: 1520px) {
+                width: 44%;
+                left: 50%;
+                top: 50%;
+                transform: translate(9%, -50%);
+              }
+              @media (min-width: 1522px) {
+                width: 40%;
+              }
+              @media (max-width: 991px) {
+                display: none;
+              }
             }
           }
         }
@@ -399,7 +427,7 @@ export default {
       @include heading;
     }
     .sub-last-section {
-      padding-top: 85.5px;
+      padding-top: 37.5px;
       .principles-content {
         @media (max-width: 991px) {
           margin-top: 15px;

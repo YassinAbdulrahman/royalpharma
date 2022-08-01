@@ -44,7 +44,7 @@ export default {
     position: relative;
     padding: 24.3px 0 10px 0;
     @media screen and (max-width: 768px) {
-      width: 357px;
+      width: 334px;
       height: 130px;
       text-align: left;
     }
@@ -81,9 +81,9 @@ export default {
       top: 50%;
       width: 267px;
       transform: translateY(-50%);
-      @media screen and (max-width: 768px) {
-        width: 55%;
-        left: -30px;
+      @media screen and (max-width: 991px) {
+        width: 39%;
+        left: -14px;
       }
       @media (min-width: 991px) and (max-width: 1366px) {
         width: 52%;

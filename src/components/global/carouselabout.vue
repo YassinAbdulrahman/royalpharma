@@ -83,10 +83,10 @@ export default {
   display: grid;
   place-content: center;
   @media screen and (max-width: 768px) {
-    height: 200px;
+    width: 100%;
   }
   @media (min-width: 991px) and (max-width: 1366px) {
-    height: 600px;
+    height: 445px;
   }
   .inner-text {
     width: 1104px;
@@ -100,20 +100,23 @@ export default {
     padding: 24.3px 0 10px 0;
     @media screen and (max-width: 768px) {
       width: 357px;
-      height: 130px;
-      text-align: left;
+      height: auto;
+      justify-content: center;
+      border-radius: 10px;
     }
     @media (min-width: 991px) and (max-width: 1366px) {
       width: 1000px;
       height: 260px;
     }
     .text-card {
-      width: 65%;
       h2 {
         font-size: 30px;
         text-align: start;
         color: #edeff5;
         font-family: Ubuntu-B;
+        @media screen and (max-width: 768px) {
+          text-align: center;
+        }
       }
       p {
         width: 665px;
@@ -124,12 +127,13 @@ export default {
         text-align: left;
         place-self: flex-end;
         @media screen and (max-width: 768px) {
-          width: 212px;
-          font-size: 1rem;
+          width: 100%;
+          font-size: 20px;
+          text-align: center;
+          padding: 0 10px;
         }
         @media (min-width: 991px) and (max-width: 1366px) {
           width: 634px;
-          
         }
       }
     }
@@ -140,8 +144,7 @@ export default {
       width: 485.47px;
       transform: translateY(-50%);
       @media screen and (max-width: 768px) {
-        width: 55%;
-        left: -30px;
+        display: none;
       }
       @media (min-width: 991px) and (max-width: 1366px) {
         width: 39%;
@@ -151,12 +154,12 @@ export default {
   }
 }
 .swiper-pagination-bullet {
-  width: 24px;
-  height: 16px;
-  background: red;
+  color: red;
 }
+
 .swiper-pagination {
-  position: relative;
+ 
+   
   &::after {
     content: "";
     position: absolute;
@@ -169,4 +172,5 @@ export default {
     margin: 0 4px;
   }
 }
+
 </style>

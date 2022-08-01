@@ -2,11 +2,11 @@
   <div class="contactus">
     <div class="container">
       <div class="content-news">
-        <div class="row g-0 justify-content-center">
+        <div class="row g-0 justify-content-evenly">
           <div class="col-sm-3 tab-content-news text-start">
             <h5>the Branch</h5>
             <ul class="p-0">
-              <li>Sana'a branch</li>
+              <li class="active">Sana'a branch</li>
               <li>Sana'a branch</li>
               <li>Sana'a branch</li>
               <li>Sana'a branch</li>
@@ -23,8 +23,8 @@
           </div>
           <div class="col-sm-9 inner-content-news">
             <h2>Get in Touch with Sana'a branch</h2>
-            <div class="row g-3">
-              <div class="col-8 col-sm-6">
+            <div class="row g-5 justify-content-between">
+              <div class="col-sm-12 col-md-6">
                 <div class="first-content text-md-start">
                   <p>
                     you can contact us throw submitting the info that you want
@@ -48,7 +48,7 @@
                   </form>
                 </div>
               </div>
-              <div class="col-4 col-sm-6">
+              <div class="col-sm-12 col-md-6">
                 <div class="second-content">
                   <googlemapping />
                   <div class="list_links">
@@ -94,25 +94,29 @@ export default {
 
 <style lang="scss" scoped>
 .contactus {
-  padding-top: 69px;
-  padding-bottom: 106px;
+  padding-top: 149px;
+  padding-bottom: 35px;
+  @media (max-width: 991px) {
+    padding-top: 115px;
+  }
   .content-news {
     background-image: linear-gradient(to right, #e2f3ff, #f4f7fc);
     box-shadow: 0 3px 6px rgb(0, 0, 0, 16%);
     border-radius: 20px;
     padding: 48px 0;
-    margin-top: 4.5rem;
-    margin-bottom: 4.5rem;
     font-family: Ubuntu-R;
-    > .row {
-      column-gap: 32px;
+    @media (max-width:991px) {
+      padding: 20px 20px;
     }
-
     .tab-content-news {
       padding: 21px 21px 21px 21px;
       width: 201px;
       background-color: #ffffff;
       border-radius: 10px;
+      @media (max-width: 991px) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
       ::-webkit-scrollbar-track {
         background-color: #fff;
       }
@@ -129,12 +133,15 @@ export default {
       ul {
         height: 589px;
         overflow-y: scroll;
+        @media (max-width: 991px) {
+          height: 300px;
+        }
         li {
           padding: 24px 0 0 0;
           cursor: pointer;
           font-size: 18px;
           color: #9c9c9c;
-          &:active {
+          &.active {
             color: #013299;
             font-family: Ubuntu-B;
           }
@@ -149,6 +156,10 @@ export default {
       text-align: left;
       font-family: Ubuntu-M;
       padding-bottom: 24px;
+      @media (max-width: 991px) {
+        font-size: 44px;
+        text-align: center;
+      }
     }
     .inner-content-news {
       .first-content {
@@ -157,12 +168,20 @@ export default {
           font-size: 1.5rem;
           line-height: 38.4px;
           width: 502px;
-          height: 65px;
           margin: 0;
           max-width: 100%;
+          @media (min-width: 991px) and (max-width: 1366px) {
+            font-size: 1.4rem;
+          }
         }
         form {
           padding-top: 50px;
+          @media (min-width: 991px) and (max-width: 1366px) {
+            padding-top: 30px;
+          }
+          @media (max-width: 991px) {
+            padding-top: 5px;
+          }
           label {
             display: block;
             color: var(--color_text_buttontwo);
@@ -214,11 +233,13 @@ export default {
         }
       }
       .second-content {
+        width: 100%;
         .list_links {
           display: flex;
           flex-direction: column;
           row-gap: 16.7px;
           margin-top: 24.5px;
+          text-align: left;
           span {
             display: flex;
             align-items: center;
@@ -236,15 +257,6 @@ export default {
               font-weight: 500;
             }
           }
-        }
-      }
-    }
-  }
-  @media screen and (max-width: 991px) {
-    .content-news {
-      .first-content {
-        form {
-          margin-top: 114px;
         }
       }
     }

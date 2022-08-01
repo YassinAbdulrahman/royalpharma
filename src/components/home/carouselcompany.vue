@@ -27,7 +27,7 @@
         <div class="first_div"><companylogo-icon /></div>
       </swiper-slide>
       <swiper-slide>
-        <div class="first_div">silde 1</div>
+        <div class="first_div"><companylogo-icon /></div>
       </swiper-slide>
     </swiper>
     <div class="swiper-button-prev" slot="button-prev"></div>
@@ -53,9 +53,32 @@ export default {
         spaceBetween: 30,
         loop: true,
         loopFillGroupWithBlank: true,
+        centeredSlides: true,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          1370: {
+            slidesPerView: 5,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
         },
       },
     };
@@ -64,10 +87,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.first_div {
-  width: 237px;
-  height: 180px;
-  background-color: #fafafa;
+.swiper-container {
+  height: 220px;
 }
 .swiper-button-next,
 .swiper-button-prev {
@@ -83,9 +104,32 @@ export default {
 }
 .swiper-button-next {
   right: -44px;
-  
+  @media (max-width: 991px) {
+    right: -10px;
+  }
 }
 .swiper-button-prev {
   left: -44px;
+  @media (max-width: 991px) {
+    left: -10px;
+  }
+}
+.swiper-slide {
+  height: 197px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms linear;
+  transform: scale(0.8);
+  opacity: 17%;
+  border-radius: 10px;
+  &.swiper-slide-active {
+    transform: scale(1);
+    opacity: 1;
+    box-shadow: 0 3px 0 #013299;
+  }
+}
+.swiper-slide__content {
+  height: 300px;
 }
 </style>

@@ -69,6 +69,6 @@ import swiperimg from './logo/card_swiper_card.svg'
 Vue.component('swiper-img-icon', swiperimg);
 
 
-import medican from './medican.svg'
+import medican from './New_Card_Home/bills.svg'
 Vue.component('medican-icon' , medican)
 

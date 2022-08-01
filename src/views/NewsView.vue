@@ -283,7 +283,7 @@ export default {
     border: none;
     box-shadow: 0 3px 6px rgb(0, 0, 0, 16%);
     border-radius: 20px;
-    padding: 16px 16px 0px 16px;
+    padding: 16px 16px 16px 16px;
     img {
       border-radius: 20px;
     }

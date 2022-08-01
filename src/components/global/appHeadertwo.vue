@@ -1,7 +1,10 @@
 <template>
   <div>
     <div class="header" v-if="$route.name == 'home'">
-      <nav class="navbar navbar-expand-lg">
+      <nav
+        :class="{ onScroll: !view.topOfPage }"
+        class="navbar navbar-expand-lg"
+      >
         <div class="container">
           <a class="navbar-brand" href="#"><headerlogo-icon /></a>
           <button
@@ -60,15 +63,47 @@
 
 
 <script>
-
 export default {
   name: "appHeadertwo",
+  data() {
+    return {
+      view: {
+        topOfPage: true,
+      },
+    };
+  },
+  beforeMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      if (window.pageYOffset > 0) {
+        if (this.view.topOfPage) this.view.topOfPage = false;
+      } else {
+        if (!this.view.topOfPage) this.view.topOfPage = true;
+      }
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .header {
   font-family: Ubuntu-R;
+  nav {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    z-index:1000 ;
+    &.onScroll {
+      box-shadow: 0 0 10px #aaa;
+      background-color: #fff;
+    }
+  }
   a {
     text-decoration: none;
   }
